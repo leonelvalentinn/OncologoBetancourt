@@ -43,13 +43,15 @@
 
 /*Estilos section hero*/
 .hero {
-    background-image: url(../img/fotos/hero-background.jpg);
+    background-image: url(../img/fotos/doc-carlos.png);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
-    height: 400px;
+    height: 480px;
 		align-items: end;
+		background-color: var(--color-5);
+		background-position: center;
 }
 .hero-txt {
     display: flex;
@@ -58,9 +60,9 @@
     align-items: center;
     width: 250px;
     height: 220px;
-    background-color: rgba(120, 92, 163, 0.5);
+    background-color: rgba(120, 92, 163, 0.822);
     padding: 10%;
-    margin: 15px;
+    margin: 5px;
     border-radius: 10px;
     backdrop-filter: blur(5px);
     text-align: center;
@@ -68,14 +70,14 @@
 .hero-txt h2, .hero-txt p, .btn-ser{
     margin-top: 10px;
 }
-.hero-txt h2:nth-child(1), .hero-txt p, .btn-ser button {
+.hero-txt h2:nth-child(1), .hero-txt p, .btn-ser button, .servicios .card-holder .card-servicio button {
 	color: white;
 }
 .hero-txt h2:nth-child(2) {
 	color: var(--color-6);
 	font-size: 18px;
 }
-.btn-ser button{
+.btn-ser button, .servicios .card-holder .card-servicio button{
     margin-bottom: 5px;
     padding: 10px;
     text-align: center;
@@ -86,7 +88,7 @@
     border-style: none;
     cursor: pointer;
 }
-.btn-ser button:hover {
+.btn-ser button:hover, .servicios .card-holder .card-servicio button:hover {
     transition: 0.5s;
     background-color: var(--color-primario);
 }
@@ -104,6 +106,7 @@
 }
 .tell-me h2 {
 	font-size: 20px;
+	color: var(--color-secundario);
 }
 .item-tell .servicio {
 	display: flex;
@@ -189,24 +192,86 @@
 .card-holder {
 	display: grid;
 	grid-template-columns: repeat(1, 1fr);
-	grid-gap: 40px;
 	max-width: 350px;
-	height: 300px;
-	margin-top: 30px;
 }
-.card-servicio {
+.card-servicio, .card-servicio .card-texto {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 }
 .card-servicio img {
-	max-width: 100%;
-	max-height: 100%;
+	max-width: 50%;
+	max-height: 50%;
+	border-radius: 50%;
+	transform: translateY(70px);
+	border-style: groove;
+	border-color: blueviolet;
 }
-.card-servicio h3, .card-servicio p, .card-servicio a {
+.card-servicio .card-texto h3, .card-servicio .card-texto p, .card-servicio .card-texto a {
 	margin-top: 10px;
 }
-.card-servicio h3 {
+.card-servicio .card-texto h3 {
 	font-size: 20px;
+}
+.servicios .card-holder .card-servicio .card-texto button {
+	font-size: 15px;
+}
+.card-texto {
+	border-style: groove;
+	border-color:blueviolet;
+	border-radius: 10px;
+	background-image: url(../img/fotos/bgn-grad.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: var(--color-primario);
+	padding-top: 70px;
+}
+/*Estilos Opiniones*/
+.opiniones-container h1{
+	font-size: 22px;
+	color: var(--color-secundario);
+	padding: 5%;
+}
+.opiniones-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	background-image: url(../img/fotos/bgn-grad.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-color: var(--color-6);
+	overflow: hidden;
+}
+.opiniones {
+	display: flex;
+	width: 400%;
+	height: 250px;
+	margin-left: -100%;
+	justify-content: center;
+	align-items: center;
+	padding: 5%;
+}
+.slider-item {
+	width: 100%;
+	max-height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.slider-btn-p {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	transform: translateY(-50%);
+	font-size: 30px;
+	color: black;
+}
+.bLeft {
+	left: 0;
+}
+.bRight {
+	right: -15px;
 }
