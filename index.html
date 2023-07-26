@@ -47,7 +47,8 @@
     <section class="header-des">
       <img src="img/logos/logo-hor-color-2.svg" alt="">
       <a href="#inicio">Inicio</a>
-      <a href="#dime">Nosotros</a>
+      <a href="#dime">Mi trayectoria</a>
+			<a href="#dime">Servicios</a>
       <a href="#testimonios">Testimonios</a>
       <a href="#ubicacion">Ubicaciones</a>
       <a href="#contacto"><button>Contacto</button></a>
@@ -59,7 +60,9 @@
 				<h2>CIRUJANO ONCÓLOGO</h2>
 				<p>Enfocado en ayudarle a superar esta difícil etapa.</p>
 				<div class="btn-ser">
-					<button>ATENCIÓN Y SERVICIOS</button>
+					<a href="#servicios">
+						<button>ATENCIÓN Y SERVICIOS</button>
+					</a>
 				</div>
 			</div>
 		</section>
@@ -80,26 +83,30 @@
 					<p>Si quiere escuchar una SEGUNDA OPINIÓN</p>
 				</div>
 			</div>
-			<a href="wa.me/525514476309" target="_blank"><button>Agende su cita</button></a>
+			<a href="https://wa.me/5591986338" target="_blank"><button>Agende su cita</button></a>
 		</div>
+		<!--Sección why-->
 		<section class="why">
 			<h2>¿POR QUÉ ASISTIR CON UN CIRUJANO ONCÓLOGO?</h2>
-			<div class="item-why">
-				<i class="bi bi-heart-pulse"></i>
-				<h1>+80%</h1>
-				<h3>SUPERVIVENCIA</h3>
-				<p>La detección, tratamientos y cirugía temprana, hace que la probabilidad de superación sea mayor al 80%</p>
-			</div>
-			<div class="item-why">
-				<i class="bi bi-hospital"></i>
-				<h3>ESPECIALIZACIÓN</h3>
-				<p>Soy uno de los especialistas mejor preparados para atender cáncer o tumores benignos.</p>
-			</div>
-			<div class="item-why">
-				<span class="material-symbols-outlined">surgical</span>
-				<h1>+95%</h1>
-				<h3>CIRUGÍA</h3>
-				<p>Arriba del 95% de los pacientes diagnosticados necesitan alguna intervención quirúrgica a lo largo de su tratamiento.</p>
+			<div class="why-container">
+				<div class="item-why">
+					<i class="bi bi-heart-pulse"></i>
+					<h1>+80%</h1>
+					<h3>SUPERVIVENCIA</h3>
+					<p>La detección, tratamientos y cirugía temprana, hace que la probabilidad de superación sea mayor al 80%</p>
+				</div>
+				<div class="item-why">
+					<i class="bi bi-hospital"></i>
+					<h1>100%</h1>
+					<h3>ESPECIALIZACIÓN</h3>
+					<p>Soy uno de los especialistas mejor preparados para atender cáncer o tumores benignos.</p>
+				</div>
+				<div class="item-why">
+					<span class="material-symbols-outlined">surgical</span>
+					<h1>+95%</h1>
+					<h3>CIRUGÍA</h3>
+					<p>Arriba del 95% de los pacientes diagnosticados necesitan alguna intervención quirúrgica a lo largo de su tratamiento.</p>
+				</div>
 			</div>
 		</section>
 		<!--Servicios-->
@@ -120,6 +127,14 @@
 					<img src="img/fotos/cancer.jpg" alt="">
 					<div class="card-texto">
 						<h3>Tipos de tumores</h3>
+						<p>Atiendo cualquier clase de tumor.e ofrecemos la atención integral que su proceso necesite: diagnóstico, segunda opinión</p>
+						<a href=""><button>Conoce más</button></a>
+					</div>
+				</div>
+				<div class="card-servicio">
+					<img src="img/fotos/cirugia.jpeg" alt="">
+					<div class="card-texto">
+						<h3>Cirugía</h3>
 						<p>Cirugía abierta y de mínima invasión en tumores de cabeza y cuello, gastrointestinales, ginecológicos y torácicos, entre otros.</p>
 						<a href=""><button>Conoce más</button></a>
 					</div>
@@ -128,7 +143,73 @@
 		</section>
 		<section class="opinion" id="testimonios">
         <h1>TESTIMONIOS DE NUESTROS PACIENTES</h1>
-        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+				<!--Testimonios para pc
+				<div id="carouselExampleAutoplaying" class="carousel slide carousel-des" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="d-block w-100">
+								<div class="opinion-des">
+									<div class="item-opinion-des">
+										<h3>Xavier López</h3>
+										<span class="star"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+										<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
+									</div>
+									<div class="item-opinion-des">
+										<h3>Miguel Ortega</h3>
+											<span class="star"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+											<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+									</div>
+									<div class="item-opinion-des">
+										<h3>Karen Hernández</h3>
+											<span class="star"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+											<p>"Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+									</div>
+									<div class="item-opinion-des">
+										<h3>Carlos Medina</h3>
+											<span class="star"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+											<p>"Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+									</div>
+								</div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="d-block w-100">
+								<div class="opinion-des">
+									<div class="item-opinion-des">
+										<h3>José Pérez</h3>
+										<span class="star"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+										<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."</p>
+									</div>
+									<div class="item-opinion-des">
+										<h3>Juan Estrada</h3>
+											<span class="star"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+											<p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+									</div>
+									<div class="item-opinion-des">
+										<h3>Arturo Acosta</h3>
+											<span class="star"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+											<p>"Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+									</div>
+									<div class="item-opinion-des">
+										<h3>Arturo Acosta</h3>
+											<span class="star"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+											<p>"Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+									</div>
+								</div>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev p" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="" aria-hidden="true"><i class="bi bi-chevron-compact-left"></i></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next n" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="" aria-hidden="true"><i class="bi bi-chevron-compact-right"></i></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>-->
+				<!--Testimonios para mobile-->
+        <div id="carouselExampleAutoplaying" class="carousel slide carousel-m" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div class="carousel-item active">
               <div class="d-block w-100">
@@ -152,11 +233,11 @@
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+          <button class="carousel-control-prev p" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
             <span class="" aria-hidden="true"><i class="bi bi-chevron-compact-left"></i></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+          <button class="carousel-control-next n" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
             <span class="" aria-hidden="true"><i class="bi bi-chevron-compact-right"></i></span>
             <span class="visually-hidden">Next</span>
           </button>
@@ -168,69 +249,77 @@
       <p>No lo piense más.</p>
       <p>Acércate con nosotros y obtén la asesoría adecuada para comenzar tu tratamiento.</p>
       <p>Atención únicamente a través de cita.</p>
-      <a href="">
+      <a href="https://wa.me/5591986338" target="_blank">
         <button><i class="bi bi-whatsapp"></i> 5591986338</button>
       </a>
     </div>
     <!--Ubicaciones-->
-    <section class="ubicaciones" id="ubicacion">
-      <h2>UBICACIONES</h2>
+		<h2 class="ubi-title" id="ubicacion">UBICACIONES</h2>
+    <section class="ubicaciones">
       <div class="ubicacion-item">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15056.414688598377!2d-99.1681855!3d19.3646632!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff0a271f3adb%3A0x4f7b6ed1a5c6dac!2sHospital%20Angeles%20Universidad!5e0!3m2!1ses-419!2smx!4v1690320783343!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <a href="">
-          <button><i class="bi bi-whatsapp"></i> 5591986338</button>
-        </a>
-        <p>Atención únicamente a través de cita.</p>
-        <h3>Hospital Ángeles Universidad</h3>
-        <p>Av. Universidad 1080, Xoco, Benito Juárez, 03330, Ciudad de México</p>
-        <h3>LUNES A VIERNES</h3>
-        <h3>3:00 PM A 10:00 PM</h3>
+        <div class="ubicacion-txt">
+					<a href="https://wa.me/5591986338" target="_blank">
+						<button><i class="bi bi-whatsapp"></i> 5591986338</button>
+					</a>
+					<p>Atención únicamente a través de cita.</p>
+					<h3>Hospital Ángeles Universidad</h3>
+					<p>Av. Universidad 1080, Xoco, Benito Juárez, 03330, Ciudad de México</p>
+					<h3>LUNES A VIERNES</h3>
+					<h3>3:00 PM A 10:00 PM</h3>
+				</div>
       </div>
       <div class="ubicacion-item">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15042.132627006717!2d-99.2425818!3d19.518711!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2040c15cfc5b3%3A0x1fe70b38d4342846!2sHospital%20San%20Jos%C3%A9%20Sat%C3%A9lite%20S.A.%20de%20C.V!5e0!3m2!1ses-419!2smx!4v1690321942620!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <a href="">
-          <button><i class="bi bi-whatsapp"></i> 5591986338</button>
-        </a>
-        <p>Atención únicamente a través de cita.</p>
-        <h3>Hospital San José Satélite S.A. de C.V</h3>
-        <p>Cto. Circunvalación Pte. 53, Cd. Satélite, 53100 Naucalpan de Juárez, Méx.</p>
-        <h3>LUNES A VIERNES</h3>
-        <h3>3:00 PM A 10:00 PM</h3>
+        <div class="ubicacion-txt">
+					<a href="https://wa.me/5591986338" target="_blank">
+						<button><i class="bi bi-whatsapp"></i> 5591986338</button>
+					</a>
+					<p>Atención únicamente a través de cita.</p>
+					<h3>Hospital San José Satélite S.A. de C.V</h3>
+					<p>Cto. Circunvalación Pte. 53, Cd. Satélite, 53100 Naucalpan de Juárez, Méx.</p>
+					<h3>LUNES A VIERNES</h3>
+					<h3>3:00 PM A 10:00 PM</h3>
+				</div>
       </div>
       <div class="ubicacion-item">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15062.0613254035!2d-99.174202!3d19.303432!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce006f49b1f667%3A0x3297d695c4c78df6!2sCentro%20Oncol%C3%B3gico%20Internacional%20Sede%20CDMX%20SUR!5e0!3m2!1ses-419!2smx!4v1690321991449!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <a href="">
-          <button><i class="bi bi-whatsapp"></i> 5591986338</button>
-        </a>
-        <p>Atención únicamente a través de cita.</p>
-        <h3>Centro Oncológico Internacional Sede CDMX SUR</h3>
-        <p>Periférico Sur 5246, Pedregal de Carrasco, Coyoacán, 04700, Ciudad de México</p>
-        <h3>LUNES A VIERNES</h3>
-        <h3>3:00 PM A 10:00 PM</h3>
+        <div class="ubicacion-txt">
+					<a href="https://wa.me/5591986338" target="_blank">
+						<button><i class="bi bi-whatsapp"></i> 5591986338</button>
+					</a>
+					<p>Atención únicamente a través de cita.</p>
+					<h3>Centro Oncológico Internacional Sede CDMX SUR</h3>
+					<p>Periférico Sur 5246, Pedregal de Carrasco, Coyoacán, 04700, Ciudad de México</p>
+					<h3>LUNES A VIERNES</h3>
+					<h3>3:00 PM A 10:00 PM</h3>
+				</div>
       </div>
       <div class="ubicacion-item">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15094.967003351527!2d-99.2100824!3d18.9428217!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cddfe9bb2b1969%3A0xd1ee2c97e61dedbf!2sHospital%20San%20Diego!5e0!3m2!1ses-419!2smx!4v1690322016413!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <a href="">
-          <button><i class="bi bi-whatsapp"></i> 5591986338</button>
-        </a>
-        <p>Atención únicamente a través de cita.</p>
-        <h3>Hospital San Diego</h3>
-        <p>Av. San Diego 1203, zona 1, Delicias, 62296 Cuernavaca, Mor.</p>
-        <h3>MIÉRCOLES 3:30 PM A 8:00 PM</h3>
-        <h3>SÁBADO 3:30 PM A 10:00 PM</h3>
-        <h3>DOMINGO 3:30 PM A 10:00 PM</h3>
+        <div class="ubicacion-txt">
+					<a href="https://wa.me/5591986338" target="_blank">
+						<button><i class="bi bi-whatsapp"></i> 5591986338</button>
+					</a>
+					<p>Atención únicamente a través de cita.</p>
+					<h3>Hospital San Diego</h3>
+					<p>Av. San Diego 1203, zona 1, Delicias, 62296 Cuernavaca, Mor.</p>
+					<h3>MIÉRCOLES 3:30 PM A 8:00 PM</h3>
+					<h3>SÁBADO 3:30 PM A 10:00 PM</h3>
+					<h3>DOMINGO 3:30 PM A 10:00 PM</h3>
+				</div class="ubicacion-txt">
       </div>
     </section>
     <footer class="footer">
       <h4>Síguenos en todas nuestras redes sociales</h4>
       <div class="icons-rs">
-          <a href="" target="_blank"><i class="bi bi-facebook"></i></a>
-          <a href="" target="_blank"><i class="bi bi-instagram"></i></a>
-          <a href="" target="_blank"><i class="bi bi-tiktok"></i></a>
-          <a href="" target="_blank"><i class="bi bi-whatsapp"></i></a>
-          <a href="tel:"><i class="bi bi-telephone"></i></a>
+          <a href="https://www.facebook.com/people/Dr-Carlos-Enrique-López-Betancourt/100065396683357/?sk=photos" target="_blank"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/onco_carlos_beta/" target="_blank"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.doctoralia.com.mx/carlos-enrique-lopez-betancourt-2/cirujano-oncologo-cirujano-general/naucalpan?utm_campaign=305525&utm_medium=link&utm_source=widget&utm_term=instagram-profile-link" target="_blank"><img src="img/logos/doctoralia.png" alt=""></a>
+          <a href="https://wa.me/5591986338" target="_blank"><i class="bi bi-whatsapp"></i></a>
+          <a href="tel:5591986338" target="_blank"><i class="bi bi-telephone"></i></a>
       </div>
-      <p>© Clínica dental Juárez.Todos los derechos reservados | Desing by
+      <p>© Dr. Carlos López Betancourt. Todos los derechos reservados | Desing by
           <a href="https://dentarios.com.mx/programacion.php" target="_blank">Agencia Dentarios</a> </p>
     </footer>
 		<script src="js/script.js"></script>

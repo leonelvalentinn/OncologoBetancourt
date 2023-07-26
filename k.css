@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap');
+
 :root{
     --color-primario: #7d64a3;
     --color-secundario:#596e9e;
@@ -83,6 +84,7 @@
   width: 100%;
   font-size: 20px;
   font-weight: 600;
+
 }
 .header-des img {
   max-width: 200px;
@@ -136,7 +138,7 @@
 	font-size: 19px;
   font-weight: bold;
 }
-.btn-ser button, .servicios .card-holder .card-servicio button {
+.btn-ser button, .servicios .card-holder .card-servicio button, .header-des button{
     margin-bottom: 5px;
     padding: 15px;
     text-align: center;
@@ -146,17 +148,6 @@
     border-color: #596e9e;
     border-style: none;
     cursor: pointer;
-}
-.header-des button {
-  margin-bottom: 5px;
-  padding: 5px 20px 5px 20px;
-  text-align: center;
-  font-size: 10px;
-  background-color: var(--color-secundario);
-  border-radius: 5px;
-  border-color: #596e9e;
-  border-style: none;
-  cursor: pointer;
 }
 .btn-ser button:hover, .servicios .card-holder .card-servicio button:hover, .header-des button:hover, 
 .tell-me button:hover, .contacto button:hover, .ubicaciones button:hover, .header-mobile .info:hover {
@@ -234,7 +225,6 @@
 	align-items: center;
 	justify-content: center;
 	margin-top: 20px;
-  padding: 0 15px 0 15px;
 }
 .item-why p {
 	text-align: center;
@@ -313,12 +303,12 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-color: var(--color-primario);
-	padding: 70px 10px 5px 10px;
+	padding-top: 70px;
 }
 /*Estilos Opiniones*/
 .opinion h1{
 	font-size: 22px;
-	color: white;
+	color: black;
 	padding: 5%;
 }
 .opinion {
@@ -330,25 +320,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
-}
-.carousel {
-  max-width: 400px;
-  padding: 10px;
 }
 .d-block {
   text-align: center;
-  padding: 10px;
 }
 .bi-chevron-compact-left, .bi-chevron-compact-right {
-  font-size: 40px;
+  font-size: 30px;
   color: black;
 }
 .bi-chevron-compact-left {
-  padding-right: 30px;
+  padding-right: 90px;
 }
 .bi-chevron-compact-right {
-  padding-left: 30px;
+  padding-left: 90px;
 }
 .carousel-inner {
   height: 300px;
@@ -356,6 +340,13 @@
 .bi-star-fill {
   color: gold;
 }
+/*Estilos opiniones desktop*/
+.opinion-des {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+/*Estilos contacto*/
 .contacto {
   display: flex;
   flex-direction: column;
@@ -389,9 +380,6 @@
   display: flex;
   justify-content: center;
   text-decoration: none;
-}
-.ubicaciones .ubicacion-item:nth-child(1), .ubicaciones .ubicacion-item:nth-child(3) {
-  color: white;
 }
 .ubicacion-item:nth-child(1), .ubicacion-item:nth-child(3) {
   background-color: var(--color-6);
@@ -490,7 +478,6 @@
   }
   .ubicaciones .ubicacion-item:nth-child(1), .ubicaciones .ubicacion-item:nth-child(3) {
     flex-direction: row;
-    color: white;
   }
   .ubicaciones .ubicacion-item:nth-child(2), .ubicaciones .ubicacion-item:nth-child(4) {
     flex-direction: row-reverse;
@@ -518,7 +505,7 @@
     font-size: 25px;
   }
   .tell-me p {
-    font-size: 18px;
+    font-size: 16px;
   }
   .item-tell .servicio i {
     font-size: 40px;
@@ -533,79 +520,36 @@
     font-size: 65px;
   }
   .servicios p {
-    font-size: 18px;
+    font-size: 16px;
   }
   .opinion h1 {
     font-size: 30px;
+    padding: 2%;
   }
-  .contacto p {
-    font-size: 18px;
+  .carousel-m {
+    display: none;
   }
-}
-
-
-/*Forzar las animaciones*/
-.fade {
-	transition:opacity 0.15s linear !important;
-}
-.collapsing {
-	transition:height 0.35s ease !important;
-}
-.custom-switch .custom-control-label::after {
-	transition:background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out,-webkit-transform 0.15s ease-in-out !important;
-	transition:transform 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out !important;
-	transition:transform 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out,-webkit-transform 0.15s ease-in-out !important;
-}
-.custom-range::-webkit-slider-thumb {
-	transition:background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out !important;
-}
-.custom-range::-moz-range-thumb {
-	transition:background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out !important;
-}
-.custom-range::-ms-thumb {
-	transition:background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out !important;
-}
-.custom-control-label::before,.custom-file-label,.custom-select {
-	transition:background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out !important;
-}
-.badge {
-	transition:color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out !important;
-}
-.progress-bar {
-	transition:width 0.6s ease !important;
-}
-.progress-bar-animated {
-	-webkit-animation:progress-bar-stripes 1s linear infinite !important;
-	animation:progress-bar-stripes 1s linear infinite !important;
-}
-.modal.fade .modal-dialog {
-	transition:-webkit-transform 0.3s ease-out !important;
-	transition:transform 0.3s ease-out !important;
-	transition:transform 0.3s ease-out,-webkit-transform 0.3s ease-out !important;
-}
-.carousel-item {
-	transition:-webkit-transform 0.6s ease-in-out !important;
-	transition:transform 0.6s ease-in-out !important;
-	transition:transform 0.6s ease-in-out,-webkit-transform 0.6s ease-in-out !important;
-}
-.carousel-fade .carousel-item {
-    transition-property: opacity !important;
-}
-
-.carousel-fade .active.carousel-item-left,
-.carousel-fade .active.carousel-item-right {
-    transition: 0s 0.6s opacity !important;
-}
-
-.carousel-control-prev,.carousel-control-next {
-	transition:opacity 0.15s ease !important;
-}
-.carousel-indicators li {
-	transition:opacity 0.6s ease !important;
-}
-.form-control {
-	transition:border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out !important;
-}
-.btn {
-	transition: color 0.15s ease-in-out,background-color 0.15s ease-in-out,border-color 0.15s ease-in-out,box-shadow 0.15s ease-in-out !important;
+  .carousel {
+    max-width: 100%;
+      padding: 10px;
+  }
+  .carousel-inner {
+    height: 550px;
+  }
+  .opinion-des {
+    display: grid;
+    padding: 0 30px 0 30px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  .item-opinion-des {
+    border-style: dashed;
+    border-color: #7d64a3;
+    width: 450px;
+    height: 260px;
+    padding: 30px;
+  }
+  .carousel-item {
+    transition: transform .6s ease-in-out;
+  }
 }
