@@ -24,7 +24,7 @@
     justify-content: space-evenly;
     align-items: center;
 }
-.header-mobile .btn-menu a .bi-list {
+.header-mobile .btn-menu a .bi-list, .header-mobile .btn-menu a .bi-x-lg {
     font-size: 40px;
     color: black;
 }
@@ -39,8 +39,66 @@
     max-width: 100%;
     max-height: 100%;
 }
-/*Estilos header computadora*/
+.close {
+  display: none;
+}
+.overlay-menu {
+  position: fixed;
+  background-color: rgba(120, 92, 163, 0.938);
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+  top: 90px;
+  left: 0;
+  width: 0;
+  transition: all 0.5s ease 0s;
+}
+.overlay-menu .overlay-items a {
+  text-decoration: none;
+}
+.overlay-menu .overlay-items {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+}
+.overlay-menu .overlay-items a {
+  padding: 15px;
+  font-size: 20px;
+  display: block;
+  transition: all 0.5s ease 0s;
+  font-weight: 600;
+  color:#eceff1;
+}
 
+@keyframes menuMobile {
+  0%{
+    transform: rotate(180deg);
+  }
+  100% {
+    
+  }
+}
+/*Estilos header computadora*/
+.header-des {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+
+}
+.header-des img {
+  max-width: 200px;
+}
+.header-des a {
+  text-decoration: none;
+  color: var(--color-secundario);
+  font-size: 17px;
+  cursor: pointer;
+}
+.header-des a:hover {
+  color:var(--color-3);
+}
 /*Estilos section hero*/
 .hero {
     background-image: url(../img/fotos/doc-carlos.png);
@@ -48,7 +106,7 @@
     background-size: cover;
     display: flex;
     justify-content: center;
-    height: 480px;
+    height: 520px;
 		align-items: end;
 		background-color: var(--color-5);
 		background-position: center;
@@ -59,7 +117,7 @@
     justify-content: center;
     align-items: center;
     width: 250px;
-    height: 220px;
+    height: 250px;
     background-color: rgba(120, 92, 163, 0.822);
     padding: 10%;
     margin: 5px;
@@ -67,17 +125,20 @@
     backdrop-filter: blur(5px);
     text-align: center;
 }
-.hero-txt h2, .hero-txt p, .btn-ser{
+.btn-ser{
     margin-top: 10px;
 }
-.hero-txt h2:nth-child(1), .hero-txt p, .btn-ser button, .servicios .card-holder .card-servicio button {
+.hero-txt h2:nth-child(1), .hero-txt p {
+  font-size: 15px;
+}
+.hero-txt h2:nth-child(1), .hero-txt p, .btn-ser button, .servicios .card-holder .card-servicio button, .header-des button {
 	color: white;
 }
 .hero-txt h2:nth-child(2) {
 	color: var(--color-6);
 	font-size: 18px;
 }
-.btn-ser button, .servicios .card-holder .card-servicio button{
+.btn-ser button, .servicios .card-holder .card-servicio button, .header-des button{
     margin-bottom: 5px;
     padding: 10px;
     text-align: center;
@@ -88,7 +149,7 @@
     border-style: none;
     cursor: pointer;
 }
-.btn-ser button:hover, .servicios .card-holder .card-servicio button:hover {
+.btn-ser button:hover, .servicios .card-holder .card-servicio button:hover, .header-des button:hover {
     transition: 0.5s;
     background-color: var(--color-primario);
 }
@@ -117,7 +178,7 @@
 	margin-right: 5px;
 	color: var(--color-secundario);
 }
-.tell-me button{
+.tell-me button, .contacto button, .ubicaciones button{
     margin-bottom: 5px;
 		margin-top: 5px;
     padding: 10px;
@@ -228,50 +289,103 @@
 	padding-top: 70px;
 }
 /*Estilos Opiniones*/
-.opiniones-container h1{
+.opinion h1{
 	font-size: 22px;
 	color: var(--color-secundario);
 	padding: 5%;
 }
-.opiniones-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
+.opinion {
 	background-image: url(../img/fotos/bgn-grad.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-color: var(--color-6);
-	overflow: hidden;
 }
-.opiniones {
-	display: flex;
-	width: 400%;
-	height: 250px;
-	margin-left: -100%;
-	justify-content: center;
-	align-items: center;
-	padding: 5%;
+.d-block {
+  text-align: center;
 }
-.slider-item {
-	width: 100%;
-	max-height: 100%;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+.bi-chevron-compact-left, .bi-chevron-compact-right {
+  font-size: 30px;
+  color: black;
 }
-.slider-btn-p {
-	position: absolute;
-	width: 30px;
-	height: 30px;
-	transform: translateY(-50%);
-	font-size: 30px;
-	color: black;
+.carousel-inner {
+  height: 300px;
 }
-.bLeft {
-	left: 0;
+.bi-star-fill {
+  color: gold;
 }
-.bRight {
-	right: -15px;
+.contacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contacto h2, .ubicaciones h2 {
+  color: var(--color-secundario);
+  padding: 5%;
+}
+.contacto p {
+  text-align: center;
+}
+.ubicaciones {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+}
+.ubicaciones .ubicacion-item {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ubicacion-item:nth-child(2), .ubicacion-item:nth-child(4) {
+  background-color: var(--color-6);
+}
+.ubicacion-item h3, .ubicacion-item p {
+  text-align: center;
+}
+.ubicaciones .ubicacion-item iframe {
+  margin-bottom: 10px;
+}
+.ubicacion-item h3 {
+  font-size: 19px;
+}
+/*Estilos footer*/
+.footer {
+  background-color: var(--color-primario);
+  padding: 3%;
+}
+.footer h4, .footer p {
+  text-align: center;
+  color: white;
+}
+.icons-rs {
+  display: flex;
+  justify-content: space-evenly;
+}
+.icons-rs i {
+  font-size: 20px;
+}
+.bi-facebook {
+  color: #3b5998;
+}
+.bi-instagram {
+  color: #E1306C;
+}
+.bi-tiktok, .footer p a {
+  color: white;
+  text-decoration: none;
+}
+.footer .bi-whatsapp {
+  color: green;
+}
+.bi-telephone {
+  color: #daa322;
+}
+@media (min-width: 530px) {
+  .hero {
+    background-image: url(../img/fotos/background-des.jpg);
+  }
+}
+@media (min-width: 768px) {
+  
 }
