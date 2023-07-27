@@ -563,6 +563,33 @@
   .icons-rs a {
     padding-right: 30px;
   }
+  .carousel-m {
+    display: none;
+  }
+  .carousel {
+    max-width: 980px;
+    padding: 10px;
+  }
+  .carousel-inner {
+    height: 450px;
+  }
+  .carousel-des {
+    display: flex;
+  }
+  .opinion-des {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  .d-block {
+    padding: 20px;
+  }
+  .bi-chevron-compact-left {
+    padding-right: 130px;
+  }
+  .bi-chevron-compact-right {
+    padding-left: 130px;
+  }
 }
 
 @media (min-width: 1580px) {
