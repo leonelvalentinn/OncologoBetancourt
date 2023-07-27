@@ -341,7 +341,7 @@
   padding: 10px;
 }
 .bi-chevron-compact-left, .bi-chevron-compact-right {
-  font-size: 40px;
+  font-size: 50px;
   color: black;
 }
 .bi-chevron-compact-left {
@@ -361,6 +361,10 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-image: url(../img/fotos/bg-contacto.jpg);
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 35px;
 }
 .contacto h2 {
   color: var(--color-secundario);
@@ -422,7 +426,7 @@
 /*Estilos footer*/
 .footer {
   background-color: var(--color-primario);
-  padding: 3%;
+  padding: 10px;
 }
 .footer h4, .footer p {
   text-align: center;
@@ -470,6 +474,12 @@
     height: 300px;
     margin: 20px;
   }
+  .bi-chevron-compact-right {
+    padding-left: 90px;
+  }
+  .bi-chevron-compact-left {
+    padding-right: 90px;
+  }
 }
 @media (min-width: 1024px) {
   .hero-txt {
@@ -486,7 +496,13 @@
     grid-column-gap: 40px;
   }
   .contacto h2 {
-    padding: 5% 0 0 0;
+    padding: 30px 0 0 0;
+  }
+  .opinion h1 {
+    padding: 30px;
+  }
+  .ubi-title {
+    padding-top: 30px;
   }
   .ubicaciones .ubicacion-item:nth-child(1), .ubicaciones .ubicacion-item:nth-child(3) {
     flex-direction: row;
@@ -541,8 +557,26 @@
   .contacto p {
     font-size: 18px;
   }
+  .icons-rs {
+    justify-content: center;
+  }
+  .icons-rs a {
+    padding-right: 30px;
+  }
 }
 
+@media (min-width: 1580px) {
+  .hero {
+    height: 850px;
+  }
+  .hero-txt {
+    right: 200px;
+  }
+  .ubicaciones .ubicacion-item iframe {
+    width: 700px;
+    height: 400px;
+  }
+}
 
 /*Forzar las animaciones*/
 .fade {
