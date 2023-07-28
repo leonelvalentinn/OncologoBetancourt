@@ -340,18 +340,24 @@
   text-align: center;
   padding: 10px;
 }
+.d-block p {
+  font-size: 13px;
+}
 .bi-chevron-compact-left, .bi-chevron-compact-right {
   font-size: 50px;
   color: black;
 }
 .bi-chevron-compact-left {
-  padding-right: 30px;
+  padding-right: 25px;
 }
 .bi-chevron-compact-right {
-  padding-left: 30px;
+  padding-left: 25px;
 }
 .carousel-inner {
   height: 300px;
+}
+.carousel-des {
+  display: none;
 }
 .bi-star-fill {
   color: gold;
