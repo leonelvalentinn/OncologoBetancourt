@@ -178,6 +178,7 @@
 .tell-me h2 {
 	font-size: 20px;
 	color: var(--color-secundario);
+  text-align: center;
 }
 .item-tell .servicio {
 	display: flex;
@@ -331,6 +332,8 @@
   justify-content: center;
   align-items: center;
   color: white;
+  margin-top: 15px;
+  margin-bottom: 40px;
 }
 .carousel {
   max-width: 400px;
@@ -371,10 +374,17 @@
   background-size: cover;
   background-position: center;
   padding-bottom: 35px;
+  margin-bottom: 15px;
 }
 .contacto h2 {
   color: var(--color-secundario);
   padding: 5%;
+}
+.btn-contacto a {
+  text-decoration: none;
+}
+.btn-contacto button {
+  width: 150px;
 }
 .ubi-title {
   color: var(--color-secundario);
@@ -455,6 +465,93 @@
   color: white;
   text-decoration: none;
 }
+.WA-flotante {
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: green;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.WA-flotante i {
+  color: white;
+  font-size: 25px;
+}
+/*Estilos mi trayectoria*/
+.hero-cv {
+
+}
+.bg-cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/fotos/bg-consultorio.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+.bg-cv .bd {
+  backdrop-filter: blur(5px);
+  height: 200px;
+  width: -webkit-fill-available;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bg-cv .bd h1 {
+  font-weight: bold;
+}
+.cv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 30px 20px 0 20px;
+}
+.cv h4 {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+.cv h2 {
+  text-align: center;
+  color: var(--color-secundario);
+  margin-bottom: 20px;
+} 
+.cv img {
+  border-radius: 5px;
+  margin: 0 0 30px 0;
+  width: -webkit-fill-available;
+}
+.cv-item {
+  display: flex;
+  justify-content: center;
+}
+.cv-item i {
+  font-size: 30px;
+  color: var(--color-primario);
+  margin-right: 10px;
+}
+.fotos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fotos .carousel .carousel-inner {
+  height: -webkit-fill-available;
+}
+.fotos .carousel-indicators [data-bs-target] {
+  background-color: black;
+}
+
+
+
+
+
 @media (min-width: 530px) {
   .hero {
     background-image: url(../img/fotos/background-des.jpg);
@@ -467,6 +564,12 @@
     right: 0;
     top: 200px;
     padding: 0;
+  }
+  .cv img {
+    width: auto;
+  }
+  .cv {
+    margin: 40px 30px 0 30px;
   }
 }
 @media (min-width: 768px) {
@@ -485,6 +588,37 @@
   }
   .bi-chevron-compact-left {
     padding-right: 90px;
+  }
+  .bg-cv .bd {
+    height: 400px;
+  }
+  .cv {
+    display: none;
+  }
+  .cv-desktop {
+    margin: 30px 30px 30px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: self-start;
+    flex-direction: column;
+  }
+  .cv-desktop .cv-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .cv-desktop .cv-img img {
+    border-radius: 5px;
+    margin: 0 30px 25px 0;
+  }
+  .cv-desktop .cv-img .cv-txt {
+    text-align: justify;
+  }
+  .cv-desktop .cv-img .cv-txt h2 {
+    color: var(--color-secundario);
+  }
+  .cv-desktop .cv-item i {
+    font-size: 35px;
   }
 }
 @media (min-width: 1024px) {
@@ -595,6 +729,9 @@
   }
   .bi-chevron-compact-right {
     padding-left: 130px;
+  }
+  .WA-flotante {
+    display: none;
   }
 }
 
