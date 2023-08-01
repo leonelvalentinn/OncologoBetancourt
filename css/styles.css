@@ -319,11 +319,11 @@
 /*Estilos Opiniones*/
 .opinion h1{
 	font-size: 22px;
-	color: white;
+	color: black;
 	padding: 5%;
 }
 .opinion {
-	background-image: url(../img/fotos/bgn-grad.png);
+	background-image: url(../img/recursos/bg-opinion.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-color: var(--color-6);
@@ -331,7 +331,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
+  color: black;
   margin-top: 15px;
   margin-bottom: 40px;
 }
@@ -345,6 +345,7 @@
 }
 .d-block p {
   font-size: 13px;
+  text-align: center;
 }
 .bi-chevron-compact-left, .bi-chevron-compact-right {
   font-size: 50px;
@@ -357,7 +358,7 @@
   padding-left: 25px;
 }
 .carousel-inner {
-  height: 300px;
+  height: 340px;
 }
 .carousel-des {
   display: none;
@@ -638,9 +639,6 @@
   .contacto h2 {
     padding: 30px 0 0 0;
   }
-  .opinion h1 {
-    padding: 30px;
-  }
   .ubi-title {
     padding-top: 30px;
   }
@@ -693,6 +691,7 @@
   }
   .opinion h1 {
     font-size: 30px;
+    padding: 25px 0 1px 0;
   }
   .contacto p {
     font-size: 18px;
@@ -710,28 +709,38 @@
     max-width: 980px;
     padding: 10px;
   }
-  .carousel-inner {
-    height: 450px;
-  }
   .carousel-des {
     display: flex;
   }
   .opinion-des {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    display: flex;
+  }
+  .item-opinion-des {
+    width: 100%;
+    padding: 0 10px 0 10px;
+    cursor: pointer;
+  }
+  .item-opinion-des:hover {
+    transform: scale(110%)
+  }
+  .item-opinion-des img {
+    width: 50px;
+    margin-bottom: 30px;
+  }
+  .opinion {
+    height: 500px;
   }
   .d-block {
     padding: 20px;
+  }
+  .d-block p {
+    font-size: 15px;
   }
   .bi-chevron-compact-left {
     padding-right: 130px;
   }
   .bi-chevron-compact-right {
     padding-left: 130px;
-  }
-  .WA-flotante {
-    display: none;
   }
 }
 
