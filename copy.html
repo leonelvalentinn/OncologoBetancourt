@@ -21,7 +21,7 @@
 		<!--Header para mobile-->
 		<header class="header-mobile">
 			<div class="btn-menu" id="openMenu">
-				<a onclick="openNav()"><i class="bi bi-list"></i></a>
+				<a onclick="openNav()" href="#"><i class="bi bi-list"></i></a>
 			</div>
       <div class="btn-menu close" id="closeMenu">
 				<a onclick="closeNav()"><i class="bi bi-x-lg"></i></a>
@@ -35,7 +35,7 @@
       <div class="overlay-menu" id="mobile-menu">
         <div class="overlay-items">
           <a href="#inicio" onclick="closeNav()">Inicio</a>
-          <a href="cv.html" onclick="closeNav()">Trayectoria</a>
+          <a href="cv.html" onclick="closeNav()">Mi trayectoria</a>
           <a href="servicios.html" onclick="closeNav()">Servicios</a>
           <a href="#testimonios" onclick="closeNav()">Testimonios</a>
           <a href="#ubicacion" onclick="closeNav()">Ubicaciones</a>
@@ -301,27 +301,29 @@
     </div>
     <!--Ubicaciones-->
 		<h2 class="ubi-title" id="ubicacion">UBICACIONES</h2>
-    <section class="ubicaciones ubicaciones-mov">
+    <section class="ubicaciones">
       <div class="ubicacion-item">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15056.414688598377!2d-99.1681855!3d19.3646632!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff0a271f3adb%3A0x4f7b6ed1a5c6dac!2sHospital%20Angeles%20Universidad!5e0!3m2!1ses-419!2smx!4v1690320783343!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p class="cita">Atención únicamente a través de cita.</p>
+        <p>Atención únicamente a través de cita.</p>
         <div class="acordeon">
           <div class="acordeon-item">
-            <button type="button" onclick="openMenu()">
-              <div class="dir">
-                Dirección y horarios 
-                <div id="arrow">
-                  <i class="bi bi-chevron-down"></i>
+            <h2>
+              <button type="button" onclick="openMenu()">
+                <div class="dir">
+                  Dirección y horarios 
+                  <div id="arrow">
+                    <i class="bi bi-chevron-down"></i>
+                  </div>
                 </div>
-              </div>
-            </button>
+              </button>
+            </h2>
             <div class="acordeon-collapse" id="acordeon">
               <div class="acordeon-body">
                 <div class="ubicacion-txt">
                   <h3>Hospital Ángeles Universidad</h3>
-                  <p>Av. Universidad 1080, Xoco, Benito Juárez, 03330, Ciudad de México</p>
-                  <h3>LUNES A VIERNES</h3>
-                  <h3>3:00 PM A 10:00 PM</h3>
+					        <p>Av. Universidad 1080, Xoco, Benito Juárez, 03330, Ciudad de México</p>
+					        <h3>LUNES A VIERNES</h3>
+					        <h3>3:00 PM A 10:00 PM</h3>
                 </div>
               </div>
             </div>
@@ -330,20 +332,23 @@
       </div>
       <div class="ubicacion-item">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15042.132627006717!2d-99.2425818!3d19.518711!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2040c15cfc5b3%3A0x1fe70b38d4342846!2sHospital%20San%20Jos%C3%A9%20Sat%C3%A9lite%20S.A.%20de%20C.V!5e0!3m2!1ses-419!2smx!4v1690321942620!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p class="cita">Atención únicamente a través de cita.</p>
+        <p>Atención únicamente a través de cita.</p>
         <div class="acordeon">
           <div class="acordeon-item">
-            <button type="button" onclick="openMenu2()">
-              <div class="dir">
-                Dirección y horarios 
-                <div id="arrow-2">
-                  <i class="bi bi-chevron-down"></i>
+            <h2>
+              <button type="button" onclick="openMenu2()">
+                <div class="dir">
+                  Dirección y horarios 
+                  <div id="arrow-2">
+                    <i class="bi bi-chevron-down"></i>
+                  </div>
                 </div>
-              </div>
-            </button>
+              </button>
+            </h2>
             <div class="acordeon-collapse-2" id="acordeon-2">
               <div class="acordeon-body">
                 <div class="ubicacion-txt">
+                  <p>Atención únicamente a través de cita.</p>
                   <h3>Hospital San José Satélite S.A. de C.V</h3>
                   <p>Cto. Circunvalación Pte. 53, Cd. Satélite, 53100 Naucalpan de Juárez, Méx.</p>
                   <h3>LUNES A VIERNES</h3>
@@ -355,23 +360,25 @@
         </div>
       </div>
       <div class="ubicacion-item">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.5960870364643!2d-99.13777319038333!3d19.299923544831625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce01af74a4cc7b%3A0x1e00d087af935a9b!2sHospital%20Angeles%20Acoxpa!5e0!3m2!1ses-419!2smx!4v1691001037005!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p class="cita">Atención únicamente a través de cita.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15062.0613254035!2d-99.174202!3d19.303432!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce006f49b1f667%3A0x3297d695c4c78df6!2sCentro%20Oncol%C3%B3gico%20Internacional%20Sede%20CDMX%20SUR!5e0!3m2!1ses-419!2smx!4v1690321991449!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p>Atención únicamente a través de cita.</p>
         <div class="acordeon">
           <div class="acordeon-item">
-            <button type="button" onclick="openMenu3()">
-              <div class="dir">
-                Dirección y horarios 
-                <div id="arrow-3">
-                  <i class="bi bi-chevron-down"></i>
+            <h2>
+              <button type="button" onclick="openMenu3()">
+                <div class="dir">
+                  Dirección y horarios 
+                  <div id="arrow-3">
+                    <i class="bi bi-chevron-down"></i>
+                  </div>
                 </div>
-              </div>
-            </button>
+              </button>
+            </h2>
             <div class="acordeon-collapse-3" id="acordeon-3">
               <div class="acordeon-body">
                 <div class="ubicacion-txt">
-                  <h3>Hospital Angeles Acoxpa</h3>
-                  <p>Calz Acoxpa 430, Coapa, Ex-Hacienda Coapa, Tlalpan, 14308 Ciudad de México</p>
+                  <h3>Centro Oncológico Internacional Sede CDMX SUR</h3>
+                  <p>Periférico Sur 5246, Pedregal de Carrasco, Coyoacán, 04700, Ciudad de México</p>
                   <h3>LUNES A VIERNES</h3>
                   <h3>3:00 PM A 10:00 PM</h3>
                 </div>
@@ -382,20 +389,23 @@
       </div>
       <div class="ubicacion-item">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15094.967003351527!2d-99.2100824!3d18.9428217!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cddfe9bb2b1969%3A0xd1ee2c97e61dedbf!2sHospital%20San%20Diego!5e0!3m2!1ses-419!2smx!4v1690322016413!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <p class="cita">Atención únicamente a través de cita.</p>
+        <p>Atención únicamente a través de cita.</p>
         <div class="acordeon">
           <div class="acordeon-item">
-            <button type="button" onclick="openMenu4()">
-              <div class="dir">
-                Dirección y horarios 
-                <div id="arrow-4">
-                  <i class="bi bi-chevron-down"></i>
+            <h2>
+              <button type="button" onclick="openMenu4()">
+                <div class="dir">
+                  Dirección y horarios 
+                  <div id="arrow-4">
+                    <i class="bi bi-chevron-down"></i>
+                  </div>
                 </div>
-              </div>
-            </button>
+              </button>
+            </h2>
             <div class="acordeon-collapse-4" id="acordeon-4">
               <div class="acordeon-body">
                 <div class="ubicacion-txt">
+                  <p>Atención únicamente a través de cita.</p>
                   <h3>Hospital San Diego</h3>
                   <p>Av. San Diego 1203, zona 1, Delicias, 62296 Cuernavaca, Mor.</p>
                   <h3>MIÉRCOLES 3:30 PM A 8:00 PM</h3>
@@ -405,49 +415,6 @@
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </section>
-    <section class="ubicaciones ubicaciones-des">
-      <div class="ubicacion-item">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15056.414688598377!2d-99.1681855!3d19.3646632!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff0a271f3adb%3A0x4f7b6ed1a5c6dac!2sHospital%20Angeles%20Universidad!5e0!3m2!1ses-419!2smx!4v1690320783343!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <div class="ubicacion-txt">
-					<p>Atención únicamente a través de cita.</p>
-					<h3>Hospital Ángeles Universidad</h3>
-					<p>Av. Universidad 1080, Xoco, Benito Juárez, 03330, Ciudad de México</p>
-					<h3>LUNES A VIERNES</h3>
-					<h3>3:00 PM A 10:00 PM</h3>
-				</div>
-      </div>
-      <div class="ubicacion-item">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15042.132627006717!2d-99.2425818!3d19.518711!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2040c15cfc5b3%3A0x1fe70b38d4342846!2sHospital%20San%20Jos%C3%A9%20Sat%C3%A9lite%20S.A.%20de%20C.V!5e0!3m2!1ses-419!2smx!4v1690321942620!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <div class="ubicacion-txt">
-					<p>Atención únicamente a través de cita.</p>
-					<h3>Hospital San José Satélite S.A. de C.V</h3>
-					<p>Cto. Circunvalación Pte. 53, Cd. Satélite, 53100 Naucalpan de Juárez, Méx.</p>
-					<h3>LUNES A VIERNES</h3>
-					<h3>3:00 PM A 10:00 PM</h3>
-				</div>
-      </div>
-      <div class="ubicacion-item">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.5960870364643!2d-99.13777319038333!3d19.299923544831625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce01af74a4cc7b%3A0x1e00d087af935a9b!2sHospital%20Angeles%20Acoxpa!5e0!3m2!1ses-419!2smx!4v1691001037005!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <div class="ubicacion-txt">
-          <p>Atención únicamente a través de cita.</p>
-					<h3>Hospital Angeles Acoxpa</h3>
-          <p>Calz Acoxpa 430, Coapa, Ex-Hacienda Coapa, Tlalpan, 14308 Ciudad de México</p>
-          <h3>LUNES A VIERNES</h3>
-          <h3>3:00 PM A 10:00 PM</h3>
-				</div>
-      </div>
-      <div class="ubicacion-item">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15094.967003351527!2d-99.2100824!3d18.9428217!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cddfe9bb2b1969%3A0xd1ee2c97e61dedbf!2sHospital%20San%20Diego!5e0!3m2!1ses-419!2smx!4v1690322016413!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <div class="ubicacion-txt">
-          <p>Atención únicamente a través de cita.</p>
-          <h3>Hospital San Diego</h3>
-          <p>Av. San Diego 1203, zona 1, Delicias, 62296 Cuernavaca, Mor.</p>
-          <h3>MIÉRCOLES 3:30 PM A 8:00 PM</h3>
-          <h3>SÁBADO 3:30 PM A 10:00 PM</h3>
-          <h3>DOMINGO 3:30 PM A 10:00 PM</h3>
         </div>
       </div>
     </section>

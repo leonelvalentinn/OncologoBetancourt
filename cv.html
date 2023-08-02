@@ -21,7 +21,7 @@
   <!--Header para mobile-->
   <header class="header-mobile">
     <div class="btn-menu" id="openMenu">
-      <a onclick="openNav()" href="#"><i class="bi bi-list"></i></a>
+      <a onclick="openNav()"><i class="bi bi-list"></i></a>
     </div>
     <div class="btn-menu close" id="closeMenu">
       <a onclick="closeNav()"><i class="bi bi-x-lg"></i></a>
@@ -56,60 +56,123 @@
   <section class="hero-cv">
     <div class="bg-cv"> 
       <div class="bd">
-        <h1>MI TRAYECTORIA</h1>
-      </div>
+        <h1>DR. CARLOS ENRIQUE LÓPEZ BETANCOURT</h1>
+        <h4>Cirujano oncológo</div>
+          <div class="btn-ser btn-cv">
+            <a href="#servicios">
+              <button>AGENDE SU CITA</button>
+            </a>
+          </div>
     </div> 
     <!--CV MObile-->
-    <div class="cv">
-      <img src="img/fotos/cv-carlos.png" alt="">
+    <div class="cv cv-mov">
+      <div class="sombra">
+        <img src="img/fotos/cv-carlos.png" alt="">
+      </div>
       <h2>DR. CARLOS ENRIQUE LÓPEZ BETANCOURT</h2>
       <h4>Cuento con más de 15 años de formación académica dentro de la rama de la medicina y más de 5 años de experiencia quirúrgica.</h4>
-      <div class="cv-item">
-        <i class="bi bi-mortarboard"></i>
-        <p>Egresado de la Universidad Anahuac México Norte, médico cirujano No. de cédula: 12127359</p>
-      </div>
-      <div class="cv-item">
-        <i class="bi bi-mortarboard"></i>
-        <p>Especialidad en cirugía general en el Hospital General de México No. de cédula: 12424409 </p>
-      </div>
-      <div class="cv-item">
-        <i class="bi bi-mortarboard"></i>
-        <p>Subespecialidad de Cirugía Oncológica en el Instituto Nacional de Cancerología No. de cédula: 8038358 </p>
-      </div>
-      <div class="cv-item">
-        <i class="bi bi-mortarboard"></i>
-        <p>Fellowship en cirugía de cabeza y cuello en el Memorial Sloan Kettering Cancer Center</p>
-      </div>
-    </div>
-    <!--CV Desktop-->
-    <div class="cv-desktop">
-      <div class="cv-img">
-        <img src="img/fotos/cv-carlos.png" alt="">
-        <div class="cv-txt">
-          <h2>DR. CARLOS ENRIQUE LÓPEZ BETANCOURT</h2>
-          <h4>Cuento con más de 15 años de formación académica dentro de la rama de la medicina y más de 5 años de experiencia quirúrgica.</h4>
+      <div class="container-cv-items">
+        <div class="cv-item">
+          <div class="img-container">
+            <img src="img/logos/logo-anahuac.png" alt="">
+          </div>
+          <div class="texto-cv">
+            <p>Universidad Anahuac México Norte</p>
+            <p>Médico cirujano</p>
+            <p><strong>No. de cédula: 12127359</strong></p>
+          </div>
+        </div>
+        <div class="cv-item">
+          <div class="img-container">
+            <img src="img/logos/logo-gospitalgen.png" alt="">
+          </div>
+          <div class="texto-cv">
+            <p>Hospital General de México</p>
+            <p>Cirugía general</p>
+            <p><strong>No. de cédula: 12424409</strong></p>
+          </div>
+        </div>
+        <div class="cv-item">
+          <div class="img-container">
+            <img src="img/logos/logo-cancerologia.png" alt="">
+          </div>
+          <div class="texto-cv">
+            <p>Instituto Nacional de Cancerología</p>
+            <p>Subespecialidad de Cirugía Oncológica</p>
+            <p><strong>No. de cédula: 8038358</strong></p>
+          </div>
+        </div>
+        <div class="cv-item">
+          <div class="img-container">
+            <img src="img/logos/logo-memorial.png" alt="">
+          </div>
+          <div class="texto-cv">
+            <p>Memorial Sloan Kettering Cancer Center</p>
+            <p>Fellowship en cirugía de cabeza y cuello</p>
+          </div>
         </div>
       </div>
-      <div class="cv-item">
-        <i class="bi bi-mortarboard"></i>
-        <p>Egresado de la Universidad Anahuac México Norte, médico cirujano No. de cédula: 12127359</p>
+    </div>
+    <!--CV desktop-->
+    <div class="cv cv-des">
+      <div>
+        <div class="sombra">
+          <img src="img/fotos/cv-carlos.png" alt="">
+        </div>
+        <div class="title-cv">
+          <h2>DR. CARLOS ENRIQUE LÓPEZ BETANCOURT</h2>
+          <h4>Cuento con más de 15 años de formación académica dentro de la rama de la medicina y más de 5 años de experiencia quirúrgica.</h4>  
+          <p>Realicé mi carrera de médico cirujano en la Universidad Anahuac México Norte, posteriormente la especialidad en cirugía general en el Hospital General de México y la sub especialidad de Cirugía Oncológica en el Instituto Nacional de Cancerología. Así mismo cuento con un Fellowship en cirugía de cabeza y cuello en el Memorial Sloan Kettering Cancer Center</p>
+        </div>
       </div>
-      <div class="cv-item">
-        <i class="bi bi-mortarboard"></i>
-        <p>Especialidad en cirugía general en el Hospital General de México No. de cédula: 12424409 </p>
-      </div>
-      <div class="cv-item">
-        <i class="bi bi-mortarboard"></i>
-        <p>Subespecialidad de Cirugía Oncológica en el Instituto Nacional de Cancerología No. de cédula: 8038358</p>
-      </div>
-      <div class="cv-item">
-        <i class="bi bi-mortarboard"></i>
-        <p>Fellowship en cirugía de cabeza y cuello en el Memorial Sloan Kettering Cancer Center</p>
+      <div class="container-cv-items">
+        <div>
+          <div class="cv-item">
+            <div class="img-container">
+              <img src="img/logos/logo-anahuac.png" alt="">
+            </div>
+            <div class="texto-cv">
+              <p>Universidad Anahuac México Norte</p>
+              <p>Médico cirujano</p>
+              <p><strong>No. de cédula: 12127359</strong></p>
+            </div>
+          </div>
+          <div class="cv-item">
+            <div class="img-container">
+              <img src="img/logos/logo-gospitalgen.png" alt="">
+            </div>
+            <div class="texto-cv">
+              <p>Hospital General de México</p>
+              <p>Cirugía general</p>
+              <p><strong>No. de cédula: 12424409</strong></p>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="cv-item">
+            <div class="img-container">
+              <img src="img/logos/logo-cancerologia.png" alt="">
+            </div>
+            <div class="texto-cv">
+              <p>Instituto Nacional de Cancerología</p>
+              <p>Subespecialidad de Cirugía Oncológica</p>
+              <p><strong>No. de cédula: 8038358</strong></p>
+            </div>
+          </div>
+          <div class="cv-item">
+            <div class="img-container">
+              <img src="img/logos/logo-memorial.png" alt="">
+            </div>
+            <div class="texto-cv">
+              <p>Memorial Sloan Kettering Cancer Center</p>
+              <p>Fellowship en cirugía de cabeza y cuello</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <div></div>
   </section>
-  <!--Slider fotografías-->
+  <!--Slider fotografías movil-->
   <div class="fotos">
     <div id="carouselExampleIndicators" class="carousel slide">
       <div class="carousel-indicators">
@@ -134,9 +197,195 @@
       </div>
     </div>
   </div>
+  <!--Slider desktop-->
+  <div id="carouselExampleAutoplaying" class="carousel slide carousel-des" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="d-block w-100">
+          <div class="opinion-des">
+            <div class="item-opinion-des">
+              <img src="img/recursos/paciente-1.png" alt="">
+              <p>"Excelente doctor con un buen acompañamiento durante la enfermedad. Con muy buenas propuestas de tratamiento y sobre todo muy eficaces. Altamente capacitado!"</p>
+              <span class="star"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+              <h3>Rita Ramírez</h3>
+            </div>
+            <div class="item-opinion-des">
+              <img src="img/recursos/paciente-5.png" alt="">
+              <p>"Excelente explicacion
+                Muy buena atención
+                Me da seguridad
+                Me gustó mucho la forma en como me explico la situación."</p>
+              <span class="star"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+              <h3>Martha Laura Aguirre Alvarado</h3>
+            </div>
+            <div class="item-opinion-des">
+              <img src="img/recursos/paciente-3.png" alt="">
+              <p>"Muy profesional y con experiencia. Trato excelente muy recomendable. Dr. Carlos Enrique López Betancourt."</p>
+              <span class="star"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+              <h3>Jenny Salas</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="d-block w-100">
+          <div class="opinion-des">
+            <div class="item-opinion-des">
+              <img src="img/recursos/paciente-2.png" alt="">
+              <p>"Excelente cirujano oncólogo! Comprometido con la atención de sus pacientes. Se toma su tiempo en explicar las cosas y es muy meticuloso en su trabajo. Desde el primer contacto se nota la calidez con la que hace las cosas. 100 % recomendable."</p>
+              <span class="star"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+              <h3>Adriana</h3>
+            </div>
+            <div class="item-opinion-des">
+              <img src="img/recursos/opinion-2.png" alt="">
+              <p>"Excelente atención por parte del doctor, explicación detallada, muy paciente a la hora de aclarar dudas, trato inmejorable."</p>
+              <span class="star"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+              <h3>R.A.M</h3>
+            </div>
+            <div class="item-opinion-des">
+              <img src="img/recursos/paciente-4.png" alt="">
+              <p>"Explica a detalle lo que se hará y tiene empatía hacia sus pacientes, te facilita el entendimiento de tu tratamiento y da mucha confianza. Trato digno y eficaz"</p>
+              <span class="star"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
+              <h3>José Martínez</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev p" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+      <span class="" aria-hidden="true"><i class="bi bi-chevron-compact-left"></i></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next n" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+      <span class="" aria-hidden="true"><i class="bi bi-chevron-compact-right"></i></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+    <!--Contacto-->
+    <div class="contacto" id="contacto">
+      <h2>CONTACTO</h2>
+      <p>No lo piense más.</p>
+      <p>Acércate con nosotros y obtén la asesoría adecuada para comenzar tu tratamiento.</p>
+      <p>Atención únicamente a través de cita.</p>
+			<div class="btn-contacto">
+				<a href="https://wa.me/5591986338" target="_blank">
+					<button><i class="bi bi-whatsapp"></i> WhatsApp</button>
+				</a>
+				<a href="https://wa.me/5591986338" target="_blank">
+					<button><i class="bi bi-telephone"></i> Llamada </button>
+				</a>
+			</div>
+    </div>
     <!--Ubicaciones-->
 		<h2 class="ubi-title" id="ubicacion">UBICACIONES</h2>
-    <section class="ubicaciones">
+    <section class="ubicaciones ubicaciones-mov">
+      <div class="ubicacion-item">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15056.414688598377!2d-99.1681855!3d19.3646632!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff0a271f3adb%3A0x4f7b6ed1a5c6dac!2sHospital%20Angeles%20Universidad!5e0!3m2!1ses-419!2smx!4v1690320783343!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p class="cita">Atención únicamente a través de cita.</p>
+        <div class="acordeon">
+          <div class="acordeon-item">
+            <button type="button" onclick="openMenu()">
+              <div class="dir">
+                Dirección y horarios 
+                <div id="arrow">
+                  <i class="bi bi-chevron-down"></i>
+                </div>
+              </div>
+            </button>
+            <div class="acordeon-collapse" id="acordeon">
+              <div class="acordeon-body">
+                <div class="ubicacion-txt">
+                  <h3>Hospital Ángeles Universidad</h3>
+                  <p>Av. Universidad 1080, Xoco, Benito Juárez, 03330, Ciudad de México</p>
+                  <h3>LUNES A VIERNES</h3>
+                  <h3>3:00 PM A 10:00 PM</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ubicacion-item">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15042.132627006717!2d-99.2425818!3d19.518711!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2040c15cfc5b3%3A0x1fe70b38d4342846!2sHospital%20San%20Jos%C3%A9%20Sat%C3%A9lite%20S.A.%20de%20C.V!5e0!3m2!1ses-419!2smx!4v1690321942620!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p class="cita">Atención únicamente a través de cita.</p>
+        <div class="acordeon">
+          <div class="acordeon-item">
+            <button type="button" onclick="openMenu2()">
+              <div class="dir">
+                Dirección y horarios 
+                <div id="arrow-2">
+                  <i class="bi bi-chevron-down"></i>
+                </div>
+              </div>
+            </button>
+            <div class="acordeon-collapse-2" id="acordeon-2">
+              <div class="acordeon-body">
+                <div class="ubicacion-txt">
+                  <h3>Hospital San José Satélite S.A. de C.V</h3>
+                  <p>Cto. Circunvalación Pte. 53, Cd. Satélite, 53100 Naucalpan de Juárez, Méx.</p>
+                  <h3>LUNES A VIERNES</h3>
+                  <h3>3:00 PM A 10:00 PM</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ubicacion-item">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.5960870364643!2d-99.13777319038333!3d19.299923544831625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce01af74a4cc7b%3A0x1e00d087af935a9b!2sHospital%20Angeles%20Acoxpa!5e0!3m2!1ses-419!2smx!4v1691001037005!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p class="cita">Atención únicamente a través de cita.</p>
+        <div class="acordeon">
+          <div class="acordeon-item">
+            <button type="button" onclick="openMenu3()">
+              <div class="dir">
+                Dirección y horarios 
+                <div id="arrow-3">
+                  <i class="bi bi-chevron-down"></i>
+                </div>
+              </div>
+            </button>
+            <div class="acordeon-collapse-3" id="acordeon-3">
+              <div class="acordeon-body">
+                <div class="ubicacion-txt">
+                  <h3>Hospital Angeles Acoxpa</h3>
+                  <p>Calz Acoxpa 430, Coapa, Ex-Hacienda Coapa, Tlalpan, 14308 Ciudad de México</p>
+                  <h3>LUNES A VIERNES</h3>
+                  <h3>3:00 PM A 10:00 PM</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="ubicacion-item">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15094.967003351527!2d-99.2100824!3d18.9428217!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cddfe9bb2b1969%3A0xd1ee2c97e61dedbf!2sHospital%20San%20Diego!5e0!3m2!1ses-419!2smx!4v1690322016413!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <p class="cita">Atención únicamente a través de cita.</p>
+        <div class="acordeon">
+          <div class="acordeon-item">
+            <button type="button" onclick="openMenu4()">
+              <div class="dir">
+                Dirección y horarios 
+                <div id="arrow-4">
+                  <i class="bi bi-chevron-down"></i>
+                </div>
+              </div>
+            </button>
+            <div class="acordeon-collapse-4" id="acordeon-4">
+              <div class="acordeon-body">
+                <div class="ubicacion-txt">
+                  <h3>Hospital San Diego</h3>
+                  <p>Av. San Diego 1203, zona 1, Delicias, 62296 Cuernavaca, Mor.</p>
+                  <h3>MIÉRCOLES 3:30 PM A 8:00 PM</h3>
+                  <h3>SÁBADO 3:30 PM A 10:00 PM</h3>
+                  <h3>DOMINGO 3:30 PM A 10:00 PM</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="ubicaciones ubicaciones-des">
       <div class="ubicacion-item">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15056.414688598377!2d-99.1681855!3d19.3646632!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff0a271f3adb%3A0x4f7b6ed1a5c6dac!2sHospital%20Angeles%20Universidad!5e0!3m2!1ses-419!2smx!4v1690320783343!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="ubicacion-txt">
@@ -158,25 +407,25 @@
 				</div>
       </div>
       <div class="ubicacion-item">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15062.0613254035!2d-99.174202!3d19.303432!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce006f49b1f667%3A0x3297d695c4c78df6!2sCentro%20Oncol%C3%B3gico%20Internacional%20Sede%20CDMX%20SUR!5e0!3m2!1ses-419!2smx!4v1690321991449!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.5960870364643!2d-99.13777319038333!3d19.299923544831625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce01af74a4cc7b%3A0x1e00d087af935a9b!2sHospital%20Angeles%20Acoxpa!5e0!3m2!1ses-419!2smx!4v1691001037005!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="ubicacion-txt">
-					<p>Atención únicamente a través de cita.</p>
-					<h3>Centro Oncológico Internacional Sede CDMX SUR</h3>
-					<p>Periférico Sur 5246, Pedregal de Carrasco, Coyoacán, 04700, Ciudad de México</p>
-					<h3>LUNES A VIERNES</h3>
-					<h3>3:00 PM A 10:00 PM</h3>
+          <p>Atención únicamente a través de cita.</p>
+					<h3>Hospital Angeles Acoxpa</h3>
+          <p>Calz Acoxpa 430, Coapa, Ex-Hacienda Coapa, Tlalpan, 14308 Ciudad de México</p>
+          <h3>LUNES A VIERNES</h3>
+          <h3>3:00 PM A 10:00 PM</h3>
 				</div>
       </div>
       <div class="ubicacion-item">
         <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15094.967003351527!2d-99.2100824!3d18.9428217!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cddfe9bb2b1969%3A0xd1ee2c97e61dedbf!2sHospital%20San%20Diego!5e0!3m2!1ses-419!2smx!4v1690322016413!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="ubicacion-txt">
-					<p>Atención únicamente a través de cita.</p>
-					<h3>Hospital San Diego</h3>
-					<p>Av. San Diego 1203, zona 1, Delicias, 62296 Cuernavaca, Mor.</p>
-					<h3>MIÉRCOLES 3:30 PM A 8:00 PM</h3>
-					<h3>SÁBADO 3:30 PM A 10:00 PM</h3>
-					<h3>DOMINGO 3:30 PM A 10:00 PM</h3>
-				</div class="ubicacion-txt">
+          <p>Atención únicamente a través de cita.</p>
+          <h3>Hospital San Diego</h3>
+          <p>Av. San Diego 1203, zona 1, Delicias, 62296 Cuernavaca, Mor.</p>
+          <h3>MIÉRCOLES 3:30 PM A 8:00 PM</h3>
+          <h3>SÁBADO 3:30 PM A 10:00 PM</h3>
+          <h3>DOMINGO 3:30 PM A 10:00 PM</h3>
+        </div>
       </div>
     </section>
     <!--Botón wa flotante-->
