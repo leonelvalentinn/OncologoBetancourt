@@ -709,9 +709,14 @@
 .fotos .carousel-indicators [data-bs-target] {
   background-color: black;
 }
-
-
-
+.item-slider {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  color: white;
+  background-color: rgba(128, 128, 128, 0.644);
+}
 
 
 @media (min-width: 530px) {
@@ -856,10 +861,13 @@
   .opinion-des {
     display: flex;
   }
-  .item-opinion-des:hover {
+  .slider-fotos {
+    display: flex;
+  }
+  .item-opinion-des:hover, .item-slider:hover {
     transform: scale(110%)
   }
-  .item-opinion-des {
+  .item-opinion-des, .item-slider {
     margin: 0 5px 0 5px;
   }
   .opinion {
@@ -910,6 +918,14 @@
   }
   .cv-des .container-cv-items {
     margin-top: 40px;
+  }
+  .fotos-mov {
+    display: none;
+  }
+  .fotos-des {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 

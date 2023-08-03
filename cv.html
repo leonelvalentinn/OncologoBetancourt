@@ -173,7 +173,7 @@
     </div>
   </section>
   <!--Slider fotografías movil-->
-  <div class="fotos">
+  <div class="fotos fotos-mov">
     <div id="carouselExampleIndicators" class="carousel slide">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -198,68 +198,49 @@
     </div>
   </div>
   <!--Slider desktop-->
-  <div id="carouselExampleAutoplaying" class="carousel slide carousel-des" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <div class="d-block w-100">
-          <div class="opinion-des">
-            <div class="item-opinion-des">
-              <img src="img/recursos/paciente-1.png" alt="">
-              <p>"Excelente doctor con un buen acompañamiento durante la enfermedad. Con muy buenas propuestas de tratamiento y sobre todo muy eficaces. Altamente capacitado!"</p>
-              <span class="star"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
-              <h3>Rita Ramírez</h3>
+  <div class="fotos-des">
+    <div id="carouselExampleAutoplaying" class="carousel slide carousel-des" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-block w-100">
+            <div class="slider-fotos">
+              <div class="item-slider">
+                <img src="img/fotos/experto.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="item-slider">
+                <img src="img/fotos/cirugia-onco.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="item-slider">
+                <img src="img/fotos/equipo.jpg" class="d-block w-100" alt="...">
+              </div>
             </div>
-            <div class="item-opinion-des">
-              <img src="img/recursos/paciente-5.png" alt="">
-              <p>"Excelente explicacion
-                Muy buena atención
-                Me da seguridad
-                Me gustó mucho la forma en como me explico la situación."</p>
-              <span class="star"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
-              <h3>Martha Laura Aguirre Alvarado</h3>
-            </div>
-            <div class="item-opinion-des">
-              <img src="img/recursos/paciente-3.png" alt="">
-              <p>"Muy profesional y con experiencia. Trato excelente muy recomendable. Dr. Carlos Enrique López Betancourt."</p>
-              <span class="star"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
-              <h3>Jenny Salas</h3>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-block w-100">
+            <div class="slider-fotos">
+              <div class="item-slider">
+                <img src="img/fotos/experto.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="item-slider">
+                <img src="img/fotos/cirugia-onco.jpg" class="d-block w-100" alt="...">
+              </div>
+              <div class="item-slider">
+                <img src="img/fotos/tratamiento.jpg" class="d-block w-100" alt="...">
+              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <div class="d-block w-100">
-          <div class="opinion-des">
-            <div class="item-opinion-des">
-              <img src="img/recursos/paciente-2.png" alt="">
-              <p>"Excelente cirujano oncólogo! Comprometido con la atención de sus pacientes. Se toma su tiempo en explicar las cosas y es muy meticuloso en su trabajo. Desde el primer contacto se nota la calidez con la que hace las cosas. 100 % recomendable."</p>
-              <span class="star"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
-              <h3>Adriana</h3>
-            </div>
-            <div class="item-opinion-des">
-              <img src="img/recursos/opinion-2.png" alt="">
-              <p>"Excelente atención por parte del doctor, explicación detallada, muy paciente a la hora de aclarar dudas, trato inmejorable."</p>
-              <span class="star"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
-              <h3>R.A.M</h3>
-            </div>
-            <div class="item-opinion-des">
-              <img src="img/recursos/paciente-4.png" alt="">
-              <p>"Explica a detalle lo que se hará y tiene empatía hacia sus pacientes, te facilita el entendimiento de tu tratamiento y da mucha confianza. Trato digno y eficaz"</p>
-              <span class="star"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
-              <h3>José Martínez</h3>
-            </div>
-          </div>
-        </div>
-      </div>
+      <button class="carousel-control-prev p" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="" aria-hidden="true"><i class="bi bi-chevron-compact-left"></i></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next n" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="" aria-hidden="true"><i class="bi bi-chevron-compact-right"></i></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-    <button class="carousel-control-prev p" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-      <span class="" aria-hidden="true"><i class="bi bi-chevron-compact-left"></i></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next n" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-      <span class="" aria-hidden="true"><i class="bi bi-chevron-compact-right"></i></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
     <!--Contacto-->
     <div class="contacto" id="contacto">
