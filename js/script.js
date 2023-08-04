@@ -249,3 +249,26 @@ function opencirugia7() {
     document.getElementById("arrow-cirugia-7").style.animation = "menuDireccion 0.5s linear forwards";
   }
 }
+//Scripts otros
+function openOtros() {
+  if (document.getElementById("acordeon-otros").style.display == "block") {
+    document.getElementById("acordeon-otros").style.display = "none";
+    document.getElementById("acordeon-otros").style.animation = "collapseD 0.5s linear reverse"
+    document.getElementById("arrow-otros").style.animation = "menuDireccion 0.5s linear reverse forwards";
+  } else {
+    document.getElementById("acordeon-otros").style.display = "block";
+    document.getElementById("acordeon-otros").style.animation = "collapseD 0.5s linear"
+    document.getElementById("arrow-otros").style.animation = "menuDireccion 0.5s linear forwards";
+  }
+}
+function openOtros2() {
+  if (document.getElementById("acordeon-otros-2").style.display == "block") {
+    document.getElementById("acordeon-otros-2").style.display = "none";
+    document.getElementById("acordeon-otros-2").style.animation = "collapseD 0.5s linear reverse"
+    document.getElementById("arrow-otros-2").style.animation = "menuDireccion 0.5s linear reverse forwards";
+  } else {
+    document.getElementById("acordeon-otros-2").style.display = "block";
+    document.getElementById("acordeon-otros-2").style.animation = "collapseD 0.5s linear"
+    document.getElementById("arrow-otros-2").style.animation = "menuDireccion 0.5s linear forwards";
+  }
+}

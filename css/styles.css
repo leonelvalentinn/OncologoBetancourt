@@ -176,9 +176,13 @@
   cursor: pointer;
 }
 .btn-ser button:hover, .servicios .card-holder .card-servicio button:hover, .header-des button:hover, 
-.tell-me button:hover, .contacto button:hover, .header-mobile .info:hover, .acordeon .acordeon-item button:hover {
+.tell-me button:hover, .contacto button:hover, .header-mobile .info:hover {
   transition: 0.5s;
   background-color: var(--color-6);
+}
+.acordeon .acordeon-item button:hover {
+  transition: 0.5s;
+  background-color: blueviolet;
 }
 .btn-cv button{
   background-color: blueviolet;
@@ -251,19 +255,17 @@
   justify-content: space-between;
   align-items: center;  
 }
-.acordeon-body, .acordeon-body-tratamientos, .acordeon-body-cirugia {
+.acordeon-body, .acordeon-body-tratamientos, .acordeon-body-cirugia, .acordeon-body-otros {
   max-width: 100%;
 }
 .acordeon, .acordeon-tratamientos {
   border-radius: 5px;
-  border: 1px solid blue;
 }
 .acordeon-body-cirugia {
   border-radius: 5px;
-  border: 1px solid blueviolet;
 }
 .acordeon-collapse, .acordeon-collapse-2, .acordeon-collapse-3, .acordeon-collapse-4,
-.acordeon-collapse-tratamientos, .acordeon-collapse-cirugia {
+.acordeon-collapse-tratamientos, .acordeon-collapse-cirugia, .acordeon-collapse-otros {
   display: none;
 }
 /*Estilos why*/
@@ -455,7 +457,7 @@
   color: var(--color-secundario);
   padding: 5%;
 }
-.btn-contacto {
+.btn-contacto, .contacto-ser .btn-contacto {
   display: contents;
 }
 .btn-contacto a {
@@ -736,15 +738,17 @@
   text-align: center;
   background-image: url(../img/fotos/bg-servicios.jpg);
   height: 200px;
-  color: blueviolet;
+  color: white;
   width: 100%;
+  background-position: left;
 }
 .header-tratamientos h1 {
   font-weight: bold;
 }
-.txt-tratamientos, .txt-cirugia {
-  text-align: center;
-  padding: 15px 10px 15px 10px;
+.txt-tratamientos, .txt-cirugia, .txt-otros {
+  text-align: justify;
+  padding: 0 20px 0 20px;
+  color: white;
 }
 .sub-title-trata {
   text-align: center;
@@ -754,6 +758,7 @@
 .sub-title-trata h2 {
   font-weight: bold;
   font-size: 25px;
+  color: black;
 }
 .item-tratamientos {
   display: flex;
@@ -765,28 +770,38 @@
   width: 300px;
   background-color: #404ceba6;
 }
+.item-otros {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid rgb(37, 223, 136);
+  border-radius: 10px;
+  width: 300px;
+  background-color: rgba(61, 218, 69, 0.651);
+}
 .item-cirugia {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 2px solid blueviolet;
+  border: 2px solid #c53cb3a6;
   border-radius: 10px;
   width: 300px;
-  background-color: #c53cb3a6;
+  background-color: rgba(137, 43, 226, 0.6);
 }
-.item-tratamientos img, .item-cirugia img {
+.item-tratamientos img, .item-cirugia img, .item-otros img {
   width: 200px;
   border-radius: 10px;
   margin: 10px 0 0 0;
 }
-.item-tratamientos h4, .item-cirugia h4 {
-  font-size: 25px;
+.item-tratamientos h4, .item-cirugia h4, .item-otros h4 {
+  font-size: 20px;
   text-align: center;
   margin: 20px 10px 20px 10px;
   color: white;
 }
-.container-tratamientos, .container-cirugia {
+.container-tratamientos, .container-cirugia, .container-otros {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 20px;
@@ -809,19 +824,32 @@
   padding: 15px;
   text-align: justify;
   font-size: 15px;
-  background-color: blueviolet;
+  background-color: #9e1c98;
   border-radius: 5px;
-  border-color: #9e1c98;
+  border-color: blueviolet;
   border-style: none;
   cursor: pointer;
   color: white;
   width: 100%;
   font-weight: 600;
 }
-.acordeon-tratamientos, .acordeon-cirugia {
+.acordeon-otros .acordeon-item-otros button {
+  padding: 15px;
+  text-align: justify;
+  font-size: 15px;
+  background-color: rgb(18, 172, 77);
+  border-radius: 5px;
+  border-color: rgb(37, 223, 136);
+  border-style: none;
+  cursor: pointer;
+  color: white;
+  width: 100%;
+  font-weight: 600;
+}
+.acordeon-tratamientos, .acordeon-cirugia, .acordeon-otros {
   margin: 0 0 10px 0;
 }
-.acordeon-item-tratamientos .dir i, .acordeon-item-cirugia .dir i {
+.acordeon-item-tratamientos .dir i, .acordeon-item-cirugia .dir i, .acordeon-item-otros .dir i {
   padding-left: 10px;
 }
 .acordeon-tratamientos .acordeon-item-tratamientos button:hover {
@@ -831,6 +859,65 @@
 .acordeon-cirugia .acordeon-item-cirugia button:hover {
   transition: 0.5s;
   background-color: rgb(170, 69, 196);
+}
+.acordeon-otros .acordeon-item-otros button:hover {
+  transition: 0.5s;
+  background-color: rgb(69, 196, 101);
+}
+.acordeon-body-otros {
+  border-radius: 5px;
+  border: 1px solid rgb(37, 223, 136);
+}
+.contacto-ser {
+  background-image: url(../img/fotos/bg-contacto-ser.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  background-position: right;
+  margin: 20px 0 20px 0;
+}
+.contacto-ser .btn-contacto button:hover {
+  transition: 0.5s;
+  background-color: rgb(52, 140, 255);
+} 
+.contacto-ser p{
+  padding: 20px 10px 20px 10px;
+  color: white;
+  text-align: left;
+  font-weight: 400;
+  font-size: 16px;
+}
+.contacto-ser strong {
+  font-size: 20px;
+}
+.contacto-ser img {
+  width: 100%;
+  transform: translateY(50%);
+}
+.contacto-ser .btn-contacto button{
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  font-size: 15px;
+  background-color: rgb(61, 43, 226);
+  border-radius: 5px;
+  border-color: blueviolet;
+  border-style: none;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+}
+.txt-contacto-ser {
+  width: 150px;
+}
+.container-txts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
 }
 @media (min-width: 530px) {
   .hero {
@@ -844,6 +931,18 @@
     right: 0;
     top: 200px;
     padding: 0;
+  }
+  .txt-contacto-ser {
+    width: 350px;
+  }
+  .contacto-ser .btn-contacto button {
+    margin: 10px 10px 10px 10px;
+  }
+  .contacto-ser .btn-contacto {
+    display: flex;
+  }
+  .contacto-ser {
+    height: 300px;
   }
 }
 @media (min-width: 768px) {
@@ -868,6 +967,19 @@
   }
   .btn-contacto {
     display: flow-root;
+  }
+  .contacto-ser .btn-contacto {
+    display: flex;
+  }
+  .contacto-ser {
+    height: 350px;
+    background-position: right top;
+  }
+  .container-tratamientos, .container-cirugia, .container-otros {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container-txts {
+    margin-left: 10%;
   }
 }
 @media (min-width: 1024px) {
@@ -1004,7 +1116,7 @@
   .ubicaciones-mov {
     display: none;
   }
-  .btn-contacto {
+  .btn-contacto .contacto-ser .btn-contacto {
     display: flow-root;
   }
   .bg-cv {
@@ -1039,6 +1151,35 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .header-tratamientos {
+    background-position: inherit;
+    height: 400px;
+  }
+  .contacto-ser {
+    height: 500px;
+  }
+  .container-tratamientos, .container-cirugia, .container-otros {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .txt-contacto-ser {
+    width: 100%;
+  }
+  .contacto-ser p {
+    font-size: 25px;
+  }
+  .contacto-ser strong {
+    font-size: 30px;
+  }
+  .sub-title-trata h2 {
+    font-size: 35px;
+  }
+  .acordeon-collapse, .acordeon-collapse-2, .acordeon-collapse-3, .acordeon-collapse-4, 
+  .acordeon-collapse-tratamientos, .acordeon-collapse-cirugia, .acordeon-collapse-otros {
+    display: block;
+  }
+  .acordeon-tratamientos .acordeon-item-tratamientos button, .acordeon-cirugia .acordeon-item-cirugia button {
+    display: none;
   }
 }
 
