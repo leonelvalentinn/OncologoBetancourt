@@ -13,6 +13,14 @@ function closeNav() {
   document.getElementById("closeMenu").style.display = "none";
 }
 
+//Script formulario
+function openForm() {
+  document.getElementById("form-menu").style.width = "100%";
+}
+function closeForm() {
+  document.getElementById("form-menu").style.width = "0";
+}
+
 //script menu collapse
 function openMenu() {
   if (document.getElementById("acordeon").style.display == "block") {

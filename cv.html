@@ -27,10 +27,26 @@
       <a onclick="closeNav()"><i class="bi bi-x-lg"></i></a>
     </div>
     <img src="img/logos/logo-hor-negro-letras.svg" alt="">
-    <div class="info" id="info-mobile">
-      <a href="">
+    <div class="info">
+      <a onclick="openForm()"  id="info-mobile">
         <i class="bi bi-clipboard2-heart"></i>
       </a>
+    </div>
+    <div class="overlay-form" id="form-menu">
+      <a onclick="closeForm()" id="info-mobile-2">
+        <i class="bi bi-x-lg"></i>
+      </a>
+      <form action="email.php" class="form-menu">
+        <label for="Nombre">Nombre</label>
+        <input type="text" name="Nombre" id="Nombre" required>
+        <label for="Tel">Número de télefono</label>
+        <input type="tel" name="Tel" id="Tel" required>
+        <label for="Correo">Correo</label>
+        <input type="email" name="Correo" id="Coreo"requiere>
+        <label for="Correo">Cuentame más sobre tu problema</label>
+        <textarea name="Duda" id="Duda" cols="30" rows="7" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
     </div>
     <div class="overlay-menu" id="mobile-menu">
       <div class="overlay-items">
@@ -66,7 +82,7 @@
     </div> 
     <!--CV MObile-->
     <div class="cv cv-mov">
-      <div class="sombra">
+      <div class="sombra" data-aos="zoom-in">
         <img src="img/fotos/cv-carlos.png" alt="">
       </div>
       <h2>DR. CARLOS ENRIQUE LÓPEZ BETANCOURT</h2>
@@ -116,7 +132,7 @@
     <!--CV desktop-->
     <div class="cv cv-des">
       <div>
-        <div class="sombra">
+        <div class="sombra" data-aos="zoom-in">
           <img src="img/fotos/cv-carlos.png" alt="">
         </div>
         <div class="title-cv">

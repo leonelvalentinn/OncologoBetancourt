@@ -27,10 +27,26 @@
       <a onclick="closeNav()"><i class="bi bi-x-lg"></i></a>
     </div>
     <img src="img/logos/logo-hor-negro-letras.svg" alt="">
-    <div class="info" id="info-mobile">
-      <a href="">
+    <div class="info">
+      <a onclick="openForm()"  id="info-mobile">
         <i class="bi bi-clipboard2-heart"></i>
       </a>
+    </div>
+    <div class="overlay-form" id="form-menu">
+      <a onclick="closeForm()" id="info-mobile-2">
+        <i class="bi bi-x-lg"></i>
+      </a>
+      <form action="email.php" class="form-menu">
+        <label for="Nombre">Nombre</label>
+        <input type="text" name="Nombre" id="Nombre" required>
+        <label for="Tel">Número de télefono</label>
+        <input type="tel" name="Tel" id="Tel" required>
+        <label for="Correo">Correo</label>
+        <input type="email" name="Correo" id="Coreo" required>
+        <label for="Correo">Cuentame más sobre tu problema</label>
+        <textarea name="Duda" id="Duda" cols="30" rows="7" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
     </div>
     <div class="overlay-menu" id="mobile-menu">
       <div class="overlay-items">
@@ -62,7 +78,7 @@
       <h2>TIPOS DE CÁNCER</h2>
     </div>
     <div class="container-tratamientos">
-      <div class="item-tratamientos">
+      <div class="item-tratamientos" data-aos="fade-down-right">
         <img src="img/recursos/tratamientos/cancer-endometrio.jpg" alt="">
         <h4>Cáncer de endometrio</h4>
         <div class="acordeon-tratamientos">
@@ -85,7 +101,7 @@
           </div>
         </div>
       </div>
-      <div class="item-tratamientos">
+      <div class="item-tratamientos" data-aos="fade-down-right">
         <img src="img/recursos/tratamientos/cancer-gastrico.jpg" alt="">
         <h4>Cáncer gástrico</h4>
         <div class="acordeon-tratamientos">
@@ -108,7 +124,7 @@
           </div>
         </div>
       </div>
-      <div class="item-tratamientos">
+      <div class="item-tratamientos" data-aos="fade-down-right">
         <img src="img/recursos/tratamientos/cancer-glandulas-salivales.jpg" alt="">
         <h4>Cáncer de glándulas salivales</h4>
         <div class="acordeon-tratamientos">
@@ -135,7 +151,7 @@
           </div>
         </div>
       </div>
-      <div class="item-tratamientos">
+      <div class="item-tratamientos" data-aos="fade-down-left">
         <img src="img/recursos/tratamientos/cancer-laringe.jpg" alt="">
         <h4>Cáncer de laringe</h4>
         <div class="acordeon-tratamientos">
@@ -158,7 +174,7 @@
           </div>
         </div>
       </div>
-      <div class="item-tratamientos">
+      <div class="item-tratamientos" data-aos="fade-down-left">
         <img src="img/recursos/tratamientos/cancer-oral.png" alt="">
         <h4>Cáncer de cavidad oral</h4>
         <div class="acordeon-tratamientos">
@@ -181,7 +197,7 @@
           </div>
         </div>
       </div>
-      <div class="item-tratamientos">
+      <div class="item-tratamientos" data-aos="fade-down-left">
         <img src="img/recursos/tratamientos/cancer-ovario.jpg" alt="">
         <h4>Cáncer de los ovarios</h4>
         <div class="acordeon-tratamientos">
@@ -204,7 +220,7 @@
           </div>
         </div>
       </div>
-      <div class="item-tratamientos">
+      <div class="item-tratamientos" data-aos="fade-up">
         <img src="img/recursos/tratamientos/cancer-piel.jpg" alt="">
         <h4>Cáncer de piel</h4>
         <div class="acordeon-tratamientos">
@@ -228,7 +244,7 @@
           </div>
         </div>
       </div>
-      <div class="item-tratamientos">
+      <div class="item-tratamientos" data-aos="fade-up">
         <img src="img/recursos/tratamientos/cancer-pulmon.jpg" alt="">
         <h4>Cáncer de pulmón</h4>
         <div class="acordeon-tratamientos">
@@ -252,7 +268,7 @@
           </div>
         </div>
       </div>
-      <div class="item-tratamientos">
+      <div class="item-tratamientos" data-aos="fade-up">
         <img src="img/recursos/tratamientos/cancer-testiculos.jpg" alt="">
         <h4>Cáncer de testículos</h4>
         <div class="acordeon-tratamientos">
@@ -444,7 +460,7 @@
           </div>
         </div>
       </div>
-      <div class="item-cirugia">
+      <div class="item-cirugia" data-aos="fade-up">
         <img src="img/recursos/tratamientos/colocacion-de-cateter.jpg" alt="">
         <h4>Colocación de catéter</h4>
         <div class="acordeon-cirugia">
@@ -467,7 +483,7 @@
           </div>
         </div>
       </div>
-      <div class="item-cirugia">
+      <div class="item-cirugia" data-aos="fade-up">
         <img src="img/recursos/tratamientos/ginecologia-Oncologica.jpg" alt="">
         <h4>Ginecología Oncológica</h4>
         <div class="acordeon-cirugia">
