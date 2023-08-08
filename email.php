@@ -15,7 +15,7 @@
 
     //destinatario
     $destinatario = 'leonelvalentinn@gmail.com';
-    $asunto = "Solicito información " . $nombre;
+    $asunto = "Solicito asesoría médica";
     
     //enviar email
     $header = "Email enviado desde Web Dr. Carlos Betancourt";
