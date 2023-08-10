@@ -413,6 +413,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+  height: 550px;
 }
 .card-servicio img {
 	max-width: 50%;
@@ -460,6 +461,7 @@
 	font-size: 22px;
 	color: black;
 	padding: 5%;
+  text-align: center;
 }
 .opinion {
 	background-image: url(../img/recursos/bg-opinion.jpg);
@@ -949,12 +951,20 @@
   transition: 0.5s;
   background-color: rgb(52, 140, 255);
 } 
-.contacto-ser p{
+.contacto-ser .txt-contacto-ser p{
   padding: 20px 10px 20px 10px;
   color: white;
   text-align: left;
   font-weight: 400;
   font-size: 16px;
+}
+.contacto-ser .contacto-ser-agenda {
+  color: white;
+  text-align: left;
+  font-weight: 400;
+  font-size: 16px;
+  padding: 10px 0 0 10px;
+  margin-bottom: 0;
 }
 .contacto-ser strong {
   font-size: 20px;
@@ -1237,7 +1247,7 @@
   .txt-contacto-ser {
     width: 100%;
   }
-  .contacto-ser p {
+  .contacto-ser .txt-contacto-ser p, .contacto-ser .contacto-ser-agenda {
     font-size: 25px;
   }
   .contacto-ser strong {
