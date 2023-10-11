@@ -392,10 +392,11 @@
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
-.servicios h1 {
+.servicios h1, .title-promo {
 	font-size: 30px;
 	color: var(--color-secundario);
 	margin-bottom: 5px;
+  text-align: center;
 }
 .servicios p {
 	text-align: center;
@@ -507,6 +508,24 @@
 .bi-star-fill {
   color: gold;
 }
+/*Estilos promociones*/
+.container-promociones {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
+}
+.container-promociones .item-promocion {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container-promociones .item-promocion img {
+  width: 100%;
+  height: auto;
+}
 .contacto {
   display: flex;
   flex-direction: column;
@@ -525,7 +544,7 @@
 .btn-contacto, .contacto-ser .btn-contacto {
   display: contents;
 }
-.btn-contacto a {
+.btn-contacto a, .container-promociones .item-promocion a {
   text-decoration: none;
 }
 .btn-contacto button {
@@ -947,7 +966,7 @@
   background-position: right;
   margin: 20px 0 20px 0;
 }
-.contacto-ser .btn-contacto button:hover {
+.contacto-ser .btn-contacto button:hover, .container-promociones .item-promocion a:hover {
   transition: 0.5s;
   background-color: rgb(52, 140, 255);
 } 
@@ -973,7 +992,7 @@
   width: 100%;
   transform: translateY(50%);
 }
-.contacto-ser .btn-contacto button{
+.contacto-ser .btn-contacto button, .container-promociones .item-promocion a{
   margin: 10px;
   padding: 15px;
   text-align: center;
@@ -1061,6 +1080,10 @@
   }
   .container-txts {
     margin-left: 10%;
+  }
+  .container-promociones {
+    grid-template-columns: repeat(2, minmax(300px, 400px));
+    gap: 30px;
   }
 }
 @media (min-width: 1024px) {
