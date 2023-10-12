@@ -392,11 +392,19 @@
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
-.servicios h1, .title-promo {
+.servicios h1 {
 	font-size: 30px;
 	color: var(--color-secundario);
 	margin-bottom: 5px;
   text-align: center;
+}
+.title-promo {
+	font-size: 30px;
+	color: rgb(211, 3, 159);
+	margin-bottom: 5px;
+  font-weight: bolder;
+  text-align: center;
+  padding: 0 10px;
 }
 .servicios p {
 	text-align: center;
@@ -525,6 +533,13 @@
 .container-promociones .item-promocion img {
   width: 100%;
   height: auto;
+  margin-bottom: 20px;
+  padding: 0 35px;
+  transition: all 0.3s linear;
+}
+.container-promociones .item-promocion img:hover {
+  transition: all 0.3s linear;
+  transform: scale(1.1);
 }
 .contacto {
   display: flex;
@@ -966,9 +981,13 @@
   background-position: right;
   margin: 20px 0 20px 0;
 }
-.contacto-ser .btn-contacto button:hover, .container-promociones .item-promocion a:hover {
+.contacto-ser .btn-contacto button:hover {
   transition: 0.5s;
   background-color: rgb(52, 140, 255);
+} 
+.container-promociones .item-promocion a:hover {
+  transition: 0.5s;
+  background-color: rgb(255, 52, 245);
 } 
 .contacto-ser .txt-contacto-ser p{
   padding: 20px 10px 20px 10px;
@@ -992,7 +1011,7 @@
   width: 100%;
   transform: translateY(50%);
 }
-.contacto-ser .btn-contacto button, .container-promociones .item-promocion a{
+.contacto-ser .btn-contacto button {
   margin: 10px;
   padding: 15px;
   text-align: center;
@@ -1000,6 +1019,18 @@
   background-color: rgb(61, 43, 226);
   border-radius: 5px;
   border-color: blueviolet;
+  border-style: none;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+}
+.container-promociones .item-promocion a{
+  margin: 10px;
+  padding: 15px;
+  text-align: center;
+  font-size: 15px;
+  background-color: rgb(226, 43, 156);
+  border-radius: 5px;
   border-style: none;
   cursor: pointer;
   color: white;
@@ -1084,6 +1115,9 @@
   .container-promociones {
     grid-template-columns: repeat(2, minmax(300px, 400px));
     gap: 30px;
+  }
+  .container-promociones .item-promocion img {
+    padding: 0 5px;
   }
 }
 @media (min-width: 1024px) {
