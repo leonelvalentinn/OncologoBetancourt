@@ -549,8 +549,15 @@
   background-image: url(../img/fotos/bg-contacto.jpg);
   background-size: cover;
   background-position: center;
-  padding-bottom: 35px;
+  padding: 0 10px 35px 10px;
   margin-bottom: 15px;
+}
+.contacto .contenido {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 750px;
 }
 .contacto h2 {
   color: var(--color-secundario);
@@ -564,6 +571,10 @@
 }
 .btn-contacto button {
   width: 150px;
+}
+.btn-contacto a[href="https://wa.me/525532321256?text=Buenas tardes, solicito información sobre "] > button {
+  margin-right: 20px;
+  background-color: #10b418;
 }
 .ubi-title {
   color: var(--color-secundario);
