@@ -572,7 +572,7 @@
 .btn-contacto button {
   width: 150px;
 }
-.btn-contacto a[href="https://wa.me/525532321256?text=Buenas tardes, solicito información sobre "] > button {
+.btn-contacto a[href="https://wa.me/525591986338?text=Buenas tardes, solicito información sobre "] > button {
   margin-right: 20px;
   background-color: #10b418;
 }
@@ -1124,7 +1124,7 @@
     margin-left: 10%;
   }
   .container-promociones {
-    grid-template-columns: repeat(2, minmax(300px, 400px));
+    grid-template-columns: repeat(1, minmax(300px, 400px));
     gap: 30px;
   }
   .container-promociones .item-promocion img {
