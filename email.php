@@ -14,7 +14,7 @@
     $mensaje .= "Mensaje enviado el " .date('d/m/Y', time());
 
     //destinatario
-    $destinatario = 'leonelvalentinn@gmail.com';
+    $destinatario = 'betancourt@gmail.com';
     $asunto = "Solicito asesoría médica";
     
     //enviar email
