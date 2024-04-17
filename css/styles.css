@@ -178,15 +178,18 @@
 }
 /*Estilos section hero*/
 .hero {
-    background-image: url(../img/fotos/doc-carlos.png);
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     justify-content: center;
-    height: 520px;
 		align-items: end;
 		background-color: var(--color-5);
-		background-position: center;
+  position: relative;
+}
+.hero .img-hero-mov {
+  width: 100%;
+  height: auto;
+}
+.hero .img-hero-des {
+  display: none;
 }
 .hero-txt {
     display: flex;
@@ -196,11 +199,14 @@
     width: 250px;
     height: 250px;
     background-color: rgba(120, 92, 163, 0.822);
-    padding: 10%;
-    margin: 5px;
+    padding: 0 1rem;
     border-radius: 10px;
     backdrop-filter: blur(5px);
     text-align: center;
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
 }
 .btn-ser{
     margin-top: 10px;
@@ -211,7 +217,7 @@
 .hero-txt h2:nth-child(1), .hero-txt p, .btn-ser button, .servicios .card-holder .card-servicio button, .header-des button {
 	color: white;
 }
-.hero-txt h2:nth-child(2) {
+.hero-txt h1 {
 	color: rgb(0 245 255);
 	font-size: 19px;
   font-weight: bold;
@@ -375,7 +381,7 @@
 	font-size: 50px;
 	color: rgb(0 245 255);
 }
-.item-why h1 {
+.item-why h2 {
 	font-size: 30px;
 }
 .item-why h3 {
@@ -392,7 +398,7 @@
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
-.servicios h1 {
+.servicios h2 {
 	font-size: 30px;
 	color: var(--color-secundario);
 	margin-bottom: 5px;
@@ -466,7 +472,7 @@
   border-radius: 5px;
   color: white;
 }
-.opinion h1{
+.opinion h2 {
 	font-size: 22px;
 	color: black;
 	padding: 5%;
@@ -743,7 +749,7 @@
   text-align: center;
   padding: 0 20px 0 20px;
 }
-.bg-cv .bd h1 {
+.bg-cv .bd h2 {
   font-weight: bold;
 }
 .cv {
@@ -857,7 +863,7 @@
   width: 100%;
   background-position: left;
 }
-.header-tratamientos h1 {
+.header-tratamientos h2 {
   font-weight: bold;
 }
 .txt-tratamientos, .txt-cirugia, .txt-otros {
@@ -1063,7 +1069,7 @@
 }
 @media (min-width: 530px) {
   .hero {
-    background-image: url(../img/fotos/background-des.jpg);
+    background-image: url(../img/fotos/hero.webp);
   }
   .tell-me p {
     text-align: center;
@@ -1182,7 +1188,7 @@
     background-position: top;
     height: 650px;
   }
-  .hero-txt h2:nth-child(2) {
+  .hero-txt h1 {
     font-size: 20px;
   }
   .hero-txt h2:nth-child(1), .hero-txt p {
@@ -1209,7 +1215,7 @@
   .servicios p {
     font-size: 18px;
   }
-  .opinion h1 {
+  .opinion h2 {
     font-size: 30px;
     padding: 25px 0 1px 0;
   }
