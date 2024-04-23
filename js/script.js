@@ -22,261 +22,46 @@ function closeForm() {
 }
 
 //script menu collapse
-function openMenu() {
-  if (document.getElementById("acordeon").style.display == "block") {
-    document.getElementById("acordeon").style.display = "none";
-    document.getElementById("acordeon").style.animation = "collapseD 0.5s linear reverse"
-    document.getElementById("arrow").style.animation = "menuDireccion 0.5s linear reverse forwards";
-  } else {
-    document.getElementById("acordeon").style.display = "block";
-    document.getElementById("acordeon").style.animation = "collapseD 0.5s linear"
-    document.getElementById("arrow").style.animation = "menuDireccion 0.5s linear forwards";
-  }
-}
-function openMenu2() {
-  if (document.getElementById("acordeon-2").style.display == "block") {
-    document.getElementById("acordeon-2").style.display = "none";
-    document.getElementById("acordeon-2").style.animation = "collapseD 0.5s linear reverse"
-    document.getElementById("arrow-2").style.animation = "menuDireccion 0.5s linear reverse forwards";
-  } else {
-    document.getElementById("acordeon-2").style.display = "block";
-    document.getElementById("acordeon-2").style.animation = "collapseD 0.5s linear"
-    document.getElementById("arrow-2").style.animation = "menuDireccion 0.5s linear forwards";
-  }
-}
-function openMenu3() {
-  if (document.getElementById("acordeon-3").style.display == "block") {
-    document.getElementById("acordeon-3").style.display = "none";
-    document.getElementById("acordeon-3").style.animation = "collapseD 0.5s linear reverse"
-    document.getElementById("arrow-3").style.animation = "menuDireccion 0.5s linear reverse forwards";
-  } else {
-    document.getElementById("acordeon-3").style.display = "block";
-    document.getElementById("acordeon-3").style.animation = "collapseD 0.5s linear"
-    document.getElementById("arrow-3").style.animation = "menuDireccion 0.5s linear forwards";
-  }
-}
-function openMenu4() {
-  if (document.getElementById("acordeon-4").style.display == "block") {
-    document.getElementById("acordeon-4").style.display = "none";
-    document.getElementById("acordeon-4").style.animation = "collapseD 0.5s linear reverse"
-    document.getElementById("arrow-4").style.animation = "menuDireccion 0.5s linear reverse forwards";
-  } else {
-    document.getElementById("acordeon-4").style.display = "block";
-    document.getElementById("acordeon-4").style.animation = "collapseD 0.5s linear"
-    document.getElementById("arrow-4").style.animation = "menuDireccion 0.5s linear forwards";
-  }
-}
+const $buttons = document.querySelectorAll('.acordeon-item button')
+const $dropdowns = document.querySelectorAll('.acordeon-item')
+const $arrows = document.querySelectorAll('.ubicacion-item #arrow')
+
+$buttons.forEach((item, i) => (
+  item.addEventListener('click', () => {
+    $dropdowns[i].classList.toggle('show')
+    $arrows[i].classList.toggle('spin-arrow')
+  })
+))
 
 //scripts para collapse servicios 
-function openTratamientos() {
-  if (document.getElementById("acordeon-tratamientos").style.display == "block") {
-    document.getElementById("acordeon-tratamientos").style.display = "none";
-    document.getElementById("acordeon-tratamientos").style.animation = "collapseD 0.5s linear reverse"
-    document.getElementById("arrow-tratamientos").style.animation = "menuDireccion 0.5s linear reverse forwards";
-  } else {
-    document.getElementById("acordeon-tratamientos").style.display = "block";
-    document.getElementById("acordeon-tratamientos").style.animation = "collapseD 0.5s linear"
-    document.getElementById("arrow-tratamientos").style.animation = "menuDireccion 0.5s linear forwards";
-  }
-} 
-function openTratamientos2() {
-  if (document.getElementById("acordeon-tratamientos-2").style.display == "block") {
-    document.getElementById("acordeon-tratamientos-2").style.display = "none";
-    document.getElementById("acordeon-tratamientos-2").style.animation = "collapseD 0.5s linear reverse"
-    document.getElementById("arrow-tratamientos-2").style.animation = "menuDireccion 0.5s linear reverse forwards";
-  } else {
-    document.getElementById("acordeon-tratamientos-2").style.display = "block";
-    document.getElementById("acordeon-tratamientos-2").style.animation = "collapseD 0.5s linear"
-    document.getElementById("arrow-tratamientos-2").style.animation = "menuDireccion 0.5s linear forwards";
-  }
-}
-function openTratamientos3() {
-  if (document.getElementById("acordeon-tratamientos-3").style.display == "block") {
-    document.getElementById("acordeon-tratamientos-3").style.display = "none";
-    document.getElementById("acordeon-tratamientos-3").style.animation = "collapseD 0.5s linear reverse"
-    document.getElementById("arrow-tratamientos-3").style.animation = "menuDireccion 0.5s linear reverse forwards";
-  } else {
-    document.getElementById("acordeon-tratamientos-3").style.display = "block";
-    document.getElementById("acordeon-tratamientos-3").style.animation = "collapseD 0.5s linear"
-    document.getElementById("arrow-tratamientos-3").style.animation = "menuDireccion 0.5s linear forwards";
-  }
-}
-function openTratamientos4() {
-  if (document.getElementById("acordeon-tratamientos-4").style.display == "block") {
-    document.getElementById("acordeon-tratamientos-4").style.display = "none";
-    document.getElementById("acordeon-tratamientos-4").style.animation = "collapseD 0.5s linear reverse"
-    document.getElementById("arrow-tratamientos-4").style.animation = "menuDireccion 0.5s linear reverse forwards";
-  } else {
-    document.getElementById("acordeon-tratamientos-4").style.display = "block";
-    document.getElementById("acordeon-tratamientos-4").style.animation = "collapseD 0.5s linear"
-    document.getElementById("arrow-tratamientos-4").style.animation = "menuDireccion 0.5s linear forwards";
-  }
-}
-function openTratamientos5() {
-  if (document.getElementById("acordeon-tratamientos-5").style.display == "block") {
-    document.getElementById("acordeon-tratamientos-5").style.display = "none";
-    document.getElementById("acordeon-tratamientos-5").style.animation = "collapseD 0.5s linear reverse"
-    document.getElementById("arrow-tratamientos-5").style.animation = "menuDireccion 0.5s linear reverse forwards";
-  } else {
-    document.getElementById("acordeon-tratamientos-5").style.display = "block";
-    document.getElementById("acordeon-tratamientos-5").style.animation = "collapseD 0.5s linear"
-    document.getElementById("arrow-tratamientos-5").style.animation = "menuDireccion 0.5s linear forwards";
-  }
-}
-function openTratamientos6() {
-  if (document.getElementById("acordeon-tratamientos-6").style.display == "block") {
-    document.getElementById("acordeon-tratamientos-6").style.display = "none";
-    document.getElementById("acordeon-tratamientos-6").style.animation = "collapseD 0.5s linear reverse"
-    document.getElementById("arrow-tratamientos-6").style.animation = "menuDireccion 0.5s linear reverse forwards";
-  } else {
-    document.getElementById("acordeon-tratamientos-6").style.display = "block";
-    document.getElementById("acordeon-tratamientos-6").style.animation = "collapseD 0.5s linear"
-    document.getElementById("arrow-tratamientos-6").style.animation = "menuDireccion 0.5s linear forwards";
-  }
-}
-function openTratamientos7() {
-  if (document.getElementById("acordeon-tratamientos-7").style.display == "block") {
-    document.getElementById("acordeon-tratamientos-7").style.display = "none";
-    document.getElementById("acordeon-tratamientos-7").style.animation = "collapseD 0.5s linear reverse"
-    document.getElementById("arrow-tratamientos-7").style.animation = "menuDireccion 0.5s linear reverse forwards";
-  } else {
-    document.getElementById("acordeon-tratamientos-7").style.display = "block";
-    document.getElementById("acordeon-tratamientos-7").style.animation = "collapseD 0.5s linear"
-    document.getElementById("arrow-tratamientos-7").style.animation = "menuDireccion 0.5s linear forwards";
-  }
-}
-function openTratamientos8() {
-  if (document.getElementById("acordeon-tratamientos-8").style.display == "block") {
-    document.getElementById("acordeon-tratamientos-8").style.display = "none";
-    document.getElementById("acordeon-tratamientos-8").style.animation = "collapseD 0.5s linear reverse"
-    document.getElementById("arrow-tratamientos-8").style.animation = "menuDireccion 0.5s linear reverse forwards";
-  } else {
-    document.getElementById("acordeon-tratamientos-8").style.display = "block";
-    document.getElementById("acordeon-tratamientos-8").style.animation = "collapseD 0.5s linear"
-    document.getElementById("arrow-tratamientos-8").style.animation = "menuDireccion 0.5s linear forwards";
-  }
-}
-function openTratamientos9() {
-  if (document.getElementById("acordeon-tratamientos-9").style.display == "block") {
-    document.getElementById("acordeon-tratamientos-9").style.display = "none";
-    document.getElementById("acordeon-tratamientos-9").style.animation = "collapseD 0.5s linear reverse"
-    document.getElementById("arrow-tratamientos-9").style.animation = "menuDireccion 0.5s linear reverse forwards";
-  } else {
-    document.getElementById("acordeon-tratamientos-9").style.display = "block";
-    document.getElementById("acordeon-tratamientos-9").style.animation = "collapseD 0.5s linear"
-    document.getElementById("arrow-tratamientos-9").style.animation = "menuDireccion 0.5s linear forwards";
-  }
-}
-function openTratamientos10() {
-  if (document.getElementById("acordeon-tratamientos-10").style.display == "block") {
-    document.getElementById("acordeon-tratamientos-10").style.display = "none";
-    document.getElementById("acordeon-tratamientos-10").style.animation = "collapseD 0.5s linear reverse"
-    document.getElementById("arrow-tratamientos-10").style.animation = "menuDireccion 0.5s linear reverse forwards";
-  } else {
-    document.getElementById("acordeon-tratamientos-10").style.display = "block";
-    document.getElementById("acordeon-tratamientos-10").style.animation = "collapseD 0.5s linear"
-    document.getElementById("arrow-tratamientos-10").style.animation = "menuDireccion 0.5s linear forwards";
-  }
-}
+const $buttonsTreatments = document.querySelectorAll('.container-tratamientos button')
+const $dropdownsTreatments = document.querySelectorAll('.container-tratamientos .acordeon-tratamientos')
+const $arrowsTreatments = document.querySelectorAll('.container-tratamientos #arrow')
 
-//scripts collapse cirugias
-function opencirugia() {
-  if (document.getElementById("acordeon-cirugia").style.display == "block") {
-    document.getElementById("acordeon-cirugia").style.display = "none";
-    document.getElementById("acordeon-cirugia").style.animation = "collapseD 0.5s linear reverse"
-    document.getElementById("arrow-cirugia").style.animation = "menuDireccion 0.5s linear reverse forwards";
-  } else {
-    document.getElementById("acordeon-cirugia").style.display = "block";
-    document.getElementById("acordeon-cirugia").style.animation = "collapseD 0.5s linear"
-    document.getElementById("arrow-cirugia").style.animation = "menuDireccion 0.5s linear forwards";
-  }
-}
-function opencirugia2() {
-  if (document.getElementById("acordeon-cirugia-2").style.display == "block") {
-    document.getElementById("acordeon-cirugia-2").style.display = "none";
-    document.getElementById("acordeon-cirugia-2").style.animation = "collapseD 0.5s linear reverse"
-    document.getElementById("arrow-cirugia-2").style.animation = "menuDireccion 0.5s linear reverse forwards";
-  } else {
-    document.getElementById("acordeon-cirugia-2").style.display = "block";
-    document.getElementById("acordeon-cirugia-2").style.animation = "collapseD 0.5s linear"
-    document.getElementById("arrow-cirugia-2").style.animation = "menuDireccion 0.5s linear forwards";
-  }
-}
-function opencirugia3() {
-  if (document.getElementById("acordeon-cirugia-3").style.display == "block") {
-    document.getElementById("acordeon-cirugia-3").style.display = "none";
-    document.getElementById("acordeon-cirugia-3").style.animation = "collapseD 0.5s linear reverse"
-    document.getElementById("arrow-cirugia-3").style.animation = "menuDireccion 0.5s linear reverse forwards";
-  } else {
-    document.getElementById("acordeon-cirugia-3").style.display = "block";
-    document.getElementById("acordeon-cirugia-3").style.animation = "collapseD 0.5s linear"
-    document.getElementById("arrow-cirugia-3").style.animation = "menuDireccion 0.5s linear forwards";
-  }
-}
-function opencirugia4() {
-  if (document.getElementById("acordeon-cirugia-4").style.display == "block") {
-    document.getElementById("acordeon-cirugia-4").style.display = "none";
-    document.getElementById("acordeon-cirugia-4").style.animation = "collapseD 0.5s linear reverse"
-    document.getElementById("arrow-cirugia-4").style.animation = "menuDireccion 0.5s linear reverse forwards";
-  } else {
-    document.getElementById("acordeon-cirugia-4").style.display = "block";
-    document.getElementById("acordeon-cirugia-4").style.animation = "collapseD 0.5s linear"
-    document.getElementById("arrow-cirugia-4").style.animation = "menuDireccion 0.5s linear forwards";
-  }
-}
-function opencirugia5() {
-  if (document.getElementById("acordeon-cirugia-5").style.display == "block") {
-    document.getElementById("acordeon-cirugia-5").style.display = "none";
-    document.getElementById("acordeon-cirugia-5").style.animation = "collapseD 0.5s linear reverse"
-    document.getElementById("arrow-cirugia-5").style.animation = "menuDireccion 0.5s linear reverse forwards";
-  } else {
-    document.getElementById("acordeon-cirugia-5").style.display = "block";
-    document.getElementById("acordeon-cirugia-5").style.animation = "collapseD 0.5s linear"
-    document.getElementById("arrow-cirugia-5").style.animation = "menuDireccion 0.5s linear forwards";
-  }
-}
-function opencirugia6() {
-  if (document.getElementById("acordeon-cirugia-6").style.display == "block") {
-    document.getElementById("acordeon-cirugia-6").style.display = "none";
-    document.getElementById("acordeon-cirugia-6").style.animation = "collapseD 0.5s linear reverse"
-    document.getElementById("arrow-cirugia-6").style.animation = "menuDireccion 0.5s linear reverse forwards";
-  } else {
-    document.getElementById("acordeon-cirugia-6").style.display = "block";
-    document.getElementById("acordeon-cirugia-6").style.animation = "collapseD 0.5s linear"
-    document.getElementById("arrow-cirugia-6").style.animation = "menuDireccion 0.5s linear forwards";
-  }
-}
-function opencirugia7() {
-  if (document.getElementById("acordeon-cirugia-7").style.display == "block") {
-    document.getElementById("acordeon-cirugia-7").style.display = "none";
-    document.getElementById("acordeon-cirugia-7").style.animation = "collapseD 0.5s linear reverse"
-    document.getElementById("arrow-cirugia-7").style.animation = "menuDireccion 0.5s linear reverse forwards";
-  } else {
-    document.getElementById("acordeon-cirugia-7").style.display = "block";
-    document.getElementById("acordeon-cirugia-7").style.animation = "collapseD 0.5s linear"
-    document.getElementById("arrow-cirugia-7").style.animation = "menuDireccion 0.5s linear forwards";
-  }
-}
-//Scripts otros
-function openOtros() {
-  if (document.getElementById("acordeon-otros").style.display == "block") {
-    document.getElementById("acordeon-otros").style.display = "none";
-    document.getElementById("acordeon-otros").style.animation = "collapseD 0.5s linear reverse"
-    document.getElementById("arrow-otros").style.animation = "menuDireccion 0.5s linear reverse forwards";
-  } else {
-    document.getElementById("acordeon-otros").style.display = "block";
-    document.getElementById("acordeon-otros").style.animation = "collapseD 0.5s linear"
-    document.getElementById("arrow-otros").style.animation = "menuDireccion 0.5s linear forwards";
-  }
-}
-function openOtros2() {
-  if (document.getElementById("acordeon-otros-2").style.display == "block") {
-    document.getElementById("acordeon-otros-2").style.display = "none";
-    document.getElementById("acordeon-otros-2").style.animation = "collapseD 0.5s linear reverse"
-    document.getElementById("arrow-otros-2").style.animation = "menuDireccion 0.5s linear reverse forwards";
-  } else {
-    document.getElementById("acordeon-otros-2").style.display = "block";
-    document.getElementById("acordeon-otros-2").style.animation = "collapseD 0.5s linear"
-    document.getElementById("arrow-otros-2").style.animation = "menuDireccion 0.5s linear forwards";
-  }
-}
+$buttonsTreatments.forEach((item, i) => (
+  item.addEventListener('click', () => {
+    $dropdownsTreatments[i].classList.toggle('show')
+    $arrowsTreatments[i].classList.toggle('spin-arrow')
+  })
+))
+
+//scripts collapse cirugías
+const $buttonsSurgeries = document.querySelectorAll('.container-cirugia button')
+const $dropdownsSurgeries = document.querySelectorAll('.container-cirugia .acordeon-cirugia')
+const $arrowsSurgeries = document.querySelectorAll('.container-cirugia #arrow')
+
+$buttonsSurgeries.forEach((item, i) => (
+  item.addEventListener('click', () => {
+    $dropdownsSurgeries[i].classList.toggle('show')
+    $arrowsSurgeries[i].classList.toggle('spin-arrow')
+  })
+))
+
+
+// const $itemTreatment = document.querySelectorAll('.item-tratamientos')
+
+// $itemTreatment.forEach((item, i) => (
+//   item.addEventListener('mouseover', () => {
+//     item.classList.toggle('bg-item-t')
+//   })
+// ))

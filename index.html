@@ -13,10 +13,10 @@
 		<meta property="og:title" content='Dr. Carlos Betancourt - Cirujano Oncólogo' />
 		<meta property="og:description" content="Bienvenido a la Clínica Oncológica del Dr. Betancourt. En nuestra clínica, nos dedicamos a proporcionar atención médica de vanguardia y compasiva a pacientes que enfrentan el desafío del cáncer. El Dr. Betancourt es un cirujano oncólogo altamente experimentado y líder en su campo, comprometido con brindar tratamientos personalizados y de calidad a cada uno de nuestros pacientes." />
 		<meta property="og:type" content="website" />
-		<!--<meta property="og:url" content={url} />-->
-		<meta property="og:image" content="https://cirujanoncologo.mx/img/logos/dr-betancourt-logo.png" />
+		<meta property="og:url" content="https://cirujanoncologo.mx/" />
+		<meta property="og:image" content="https://cirujanoncologo.mx/img/logos/dr-betancourt-logo.webp" />
     <!--Favicon-->
-		<link rel="shortcut icon" href="img/logos/dr-betancourt-logo.png" type="image/x-icon">
+		<link rel="shortcut icon" href="img/logos/logo-ver-negro.svg" type="image/x-icon">
     <!--CSS-->
     <link rel="stylesheet" type="text/css" href="css/styles.css"/>
     <!--Iconos-->
@@ -55,64 +55,68 @@
 		<!--Header para mobile-->
 		<header class="header-mobile">
 			<div class="btn-menu" id="openMenu">
-				<a onclick="openNav()" aria-label="Abrir menu"><i class="bi bi-list"></i></a>
+				<button onclick="openNav()" aria-label="Mostrar menu desplegable"><i class="bi bi-list"></i></button>
 			</div>
       <div class="btn-menu close" id="closeMenu">
-				<a onclick="closeNav()" aria-label="Cerrar menu"><i class="bi bi-x-lg"></i></a>
+				<button onclick="closeNav()" aria-label="Ocultar menu desplegable"><i class="bi bi-x-lg"></i></button>
 			</div>
 			<img src="img/logos/logo-hor-negro-letras.svg" alt="">
 			<div class="info">
-				<a onclick="openForm()"  id="info-mobile">
+				<a onclick="openForm()" aria-label="Abrir formulario de correo" id="info-mobile">
 					<i class="bi bi-clipboard2-heart"></i>
 				</a>
 			</div>
       <div class="overlay-form" id="form-menu">
-        <a onclick="closeForm()" id="info-mobile-2">
+        <a onclick="closeForm()" aria-label="Cerrar formulario" id="info-mobile-2">
 					<i class="bi bi-x-lg"></i>
 				</a>
         <form action="email.php" class="form-menu" method="post">
           <label for="Nombre">Nombre</label>
           <input type="text" name="Nombre" id="Nombre" required>
-          <label for="Tel">Número de teléfono</label>
-          <input type="tel" name="Tel" id="Tel" required>
+          <label for="Phone">Número de teléfono</label>
+          <input type="tel" name="Phone" id="Phone" required>
           <label for="Correo">Correo</label>
-          <input type="email" name="Correo" id="Coreo" required>
-          <label for="Correo">Cuéntame más sobre tu problema</label>
+          <input type="email" name="Correo" id="Correo" required>
+          <label for="Duda">Cuéntame más sobre tu problema</label>
           <textarea name="Duda" id="Duda" cols="30" rows="7" required></textarea>
           <button type="submit">Enviar</button>
         </form>
       </div>
       <div class="overlay-menu" id="mobile-menu">
         <div class="overlay-items">
-          <a href="#inicio" onclick="closeNav()">Inicio</a>
-          <a href="cv.html" onclick="closeNav()">Trayectoria</a>
-          <a href="servicios.html" onclick="closeNav()">Servicios</a>
-          <a href="#testimonios" onclick="closeNav()">Testimonios</a>
-          <a href="#ubicacion" onclick="closeNav()">Ubicaciones</a>
-          <a href="#contacto" onclick="closeNav()">Contacto</a>
+          <a aria-label="Ir al inicio" href="/" onclick="closeNav()">Inicio</a>
+          <a aria-label="Ir al curriculum del Dr. Betancourt" href="cv.html" onclick="closeNav()">Trayectoria</a>
+          <a aria-label="Ir a los servicios" href="servicios.html" onclick="closeNav()">Servicios</a>
+          <a aria-label="Ir a los testimonios" href="#testimonios" onclick="closeNav()">Testimonios</a>
+          <a aria-label="Ir a la ubicación" href="#ubicacion" onclick="closeNav()">Ubicaciones</a>
+          <a aria-label="Contactar al Dr. Betancourt" href="#contacto" onclick="closeNav()">Contacto</a>
         </div>
       </div>
 		</header>
 		<!--Header pra computadora-->
     <section class="header-des">
-      <img src="img/logos/logo-hor-color-2.svg" alt="">
-      <a href="#inicio">Inicio</a>
-      <a href="cv.html">Mi trayectoria</a>
-			<a href="servicios.html">Servicios</a>
-      <a href="#testimonios">Testimonios</a>
-      <a href="#ubicacion">Ubicaciones</a>
-      <a href="#contacto"><button>5532321256</button></a>
+      <div class="container-header-des">
+        <img src="img/logos/logo-hor-color-2.svg" alt="Logo del Dr. Betancourt">
+        <div class="container-links">
+          <a aria-label="Ir al inicio" href="#inicio">Inicio</a>
+          <a aria-label="Ir al curriculum del Dr. Betancourt" href="cv.html">Mi trayectoria</a>
+          <a aria-label="Ir a los servicios" href="servicios.html">Servicios</a>
+          <a aria-label="Ir a los testimonios" href="#testimonios">Testimonios</a>
+          <a aria-label="Ir a la ubicación" href="#ubicacion">Ubicaciones</a>
+          <a aria-label="Contactar al Dr. Betancourt" href="#contacto"><button>5532321256</button></a>
+        </div>
+      </div>
     </section>
     <!--Sección hero-->
 		<section class="hero" id="inicio">
-      <img src="img/fotos/hero-mov.webp" alt="Fotografía del Dr. Betancourt" width="1125" height="2000" class="img-hero-mov">
+      <img src="img/fotos/hero-mov.webp" alt="Fotografía del Dr. Betancourt" width="1125" height="1633" class="img-hero-mov">
       <img src="img/fotos/hero.webp" alt="Fotografía del Dr. Betancourt" width="3000" height="1688" class="img-hero-des">
 			<div class="hero-txt">
 				<h2>Dr. Carlos Enrique López Betancourt</h2>
 				<h1>CIRUJANO ONCÓLOGO</h1>
-				<p>Enfocado en ayudarle a superar esta difícil etapa.</p>
+				<p>Enfocado en ayudarle a superar esta difícil etapa</p>
 				<div class="btn-ser">
-					<a href="https://wa.me/525532321256?text=Buenas tardes, solicito información sobre " target="_blank">
+					<a href="https://api.whatsapp.com/send?phone=525532321256" target="_blank">
 						<button>AGENDE SU CITA</button>
 					</a>
 				</div>
@@ -135,34 +139,33 @@
 					<p>Si requiere escuchar una SEGUNDA OPINIÓN</p>
 				</div>
 			</div>
-			<a href="https://wa.me/525532321256?text=Buenas tardes, solicito información sobre " target="_blank"><button>AGENDE SU CITA</button></a>
+			<a href="https://api.whatsapp.com/send?phone=525532321256" target="_blank"><button>AGENDE SU CITA</button></a>
 		</div>
 		<!--Sección why-->
 		<section class="why">
-			<h2>¿POR QUÉ ASISTIR CON UN CIRUJANO ONCÓLOGO?</h2>
-			<div class="why-container">
-				<div class="item-why" data-aos="fade-right" data-aos-offset="300"
-        data-aos-easing="ease-in-sine" data-aos-duration="500">
-					<i class="bi bi-heart-pulse"></i>
-					<h3>+80%</h3>
-					<h4>SUPERVIVENCIA</h4>
-					<p>La detección, tratamientos y cirugía temprana, hace que la probabilidad de superación sea mayor al 80%.</p>
-				</div>
-				<div class="item-why" data-aos="fade-up" data-aos-offset="300"
-        data-aos-easing="ease-in-sine" data-aos-duration="500">
-					<i class="bi bi-hospital"></i>
-					<h3>100%</h3>
-					<h4>ESPECIALIZACIÓN</h4>
-					<p>Soy uno de los especialistas mejor preparados para atender cáncer o tumores benignos.</p>
-				</div>
-				<div class="item-why" data-aos="fade-left" data-aos-offset="300"
-        data-aos-easing="ease-in-sine" data-aos-duration="500">
-					<span class="material-symbols-outlined">surgical</span>
-					<h3>+95%</h3>
-					<h4>CIRUGÍA</h4>
-					<p>Arriba del 95% de los pacientes diagnosticados necesitan alguna intervención quirúrgica a lo largo de su tratamiento.</p>
-				</div>
-			</div>
+			<div class="why-inner">
+        <h2>¿POR QUÉ ASISTIR CON UN CIRUJANO ONCÓLOGO?</h2>
+        <div class="why-container">
+          <div class="item-why">
+            <i class="bi bi-heart-pulse"></i>
+            <h3>+80%</h3>
+            <h4>SUPERVIVENCIA</h4>
+            <p>La detección, tratamientos y cirugía temprana, hace que la probabilidad de superación sea mayor al 80%.</p>
+          </div>
+          <div class="item-why">
+            <i class="bi bi-hospital"></i>
+            <h3>100%</h3>
+            <h4>ESPECIALIZACIÓN</h4>
+            <p>Soy uno de los especialistas mejor preparados para atender cáncer o tumores benignos.</p>
+          </div>
+          <div class="item-why">
+            <span class="material-symbols-outlined">surgical</span>
+            <h3>+95%</h3>
+            <h4>CIRUGÍA</h4>
+            <p>Arriba del 95% de los pacientes diagnosticados necesitan alguna intervención quirúrgica a lo largo de su tratamiento.</p>
+          </div>
+        </div>
+      </div>
 		</section>
 		<!--Servicios-->
 		<section class="servicios">
@@ -172,7 +175,7 @@
 			<div class="card-holder">
 				<div class="card-servicio" data-aos="flip-left" data-aos-offset="300"
         data-aos-easing="ease-in-sine" data-aos-duration="500">
-					<img src="img/fotos/diagnostico.png" alt="">
+					<img src="img/fotos/diagnostico.webp" alt="Imagen referente a un diagnostico clínico">
 					<div class="card-texto">
 						<h3>Diagnóstico</h3>
 						<p>Le ofrecemos la atención integral que su proceso necesite: diagnóstico, segunda opinión, tratamiento curativo, tratamiento de complicaciones, etc.</p>
@@ -181,16 +184,15 @@
 				</div>
 				<div class="card-servicio" data-aos="flip-up" data-aos-offset="300"
         data-aos-easing="ease-in-sine" data-aos-duration="500">
-					<img src="img/fotos/cancer.jpg" alt="">
+					<img src="img/fotos/cancer.webp" alt="Imagen referente al cáncer">
 					<div class="card-texto">
 						<h3>Tipos de tumores</h3>
 						<p>Atiendo distintos tipos de tumores, le llevo de la mano con el tratamiento, desde su diagnóstico, cirugía y tratamientos necesarios después de la operación.</p>
 						<a href="servicios.html"><button>CONOCE MÁS</button></a>
 					</div>
 				</div>
-				<div class="card-servicio" data-aos="flip-right" data-aos-offset="300"
-        data-aos-easing="ease-in-sine" data-aos-duration="500">
-					<img src="img/fotos/cirugia.jpeg" alt="">
+				<div class="card-servicio">
+					<img src="img/fotos/cirugia.jpeg" alt="Imagen referente a cirugía">
 					<div class="card-texto">
 						<h3>Cirugía</h3>
 						<p>Realizo varios tipos de cirugías, siempre tratándola con la menor invasión posible, todo dependerá de cuál es la que mejor se adapte a su necesidad.</p>
@@ -208,13 +210,13 @@
               <div class="d-block w-100">
 								<div class="opinion-des">
 									<div class="item-opinion-des">
-                    <img src="img/recursos/paciente-1.png" alt="">
+                    <img src="img/recursos/paciente-1.png" alt="Foto de perfil del paciente">
 										<p>"Excelente doctor con un buen acompañamiento durante la enfermedad. Con muy buenas propuestas de tratamiento y sobre todo muy eficaces. Altamente capacitado!"</p>
                     <span class="star"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
                     <h3>Rita Ramírez</h3>
                   </div>
 									<div class="item-opinion-des">
-                    <img src="img/recursos/paciente-5.png" alt="">
+                    <img src="img/recursos/paciente-5.png" alt="Foto de perfil del paciente">
 										<p>"Excelente explicación
                       Muy buena atención
                       Me da seguridad
@@ -223,7 +225,7 @@
                     <h3>Martha Laura Aguirre Alvarado</h3>
                   </div>
 									<div class="item-opinion-des">
-                    <img src="img/recursos/paciente-3.png" alt="">
+                    <img src="img/recursos/paciente-3.png" alt="Foto de perfil del paciente">
 										<p>"Muy profesional y con experiencia. Trato excelente muy recomendable. Dr. Carlos Enrique López Betancourt."</p>
 										<span class="star"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
                     <h3>Jenny Salas</h3>
@@ -235,19 +237,19 @@
               <div class="d-block w-100">
 								<div class="opinion-des">
                   <div class="item-opinion-des">
-                    <img src="img/recursos/paciente-2.png" alt="">
+                    <img src="img/recursos/paciente-2.png" alt="Foto de perfil del paciente">
 										<p>"Excelente cirujano oncólogo! Comprometido con la atención de sus pacientes. Se toma su tiempo en explicar las cosas y es muy meticuloso en su trabajo. Desde el primer contacto se nota la calidez con la que hace las cosas. 100 % recomendable."</p>
 										<span class="star"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
                     <h3>Adriana</h3>
                   </div>
 									<div class="item-opinion-des">
-                    <img src="img/recursos/opinion-2.png" alt="">
+                    <img src="img/recursos/opinion-2.png" alt="Foto de perfil del paciente">
 										<p>"Excelente atención por parte del doctor, explicación detallada, muy paciente a la hora de aclarar dudas, trato inmejorable."</p>
 										<span class="star"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
                     <h3>R.A.M</h3>
                   </div>
 									<div class="item-opinion-des">
-                    <img src="img/recursos/paciente-4.png" alt="">
+                    <img src="img/recursos/paciente-4.png" alt="Foto de perfil del paciente">
 										<p>"Explica a detalle lo que se hará y tiene empatía hacia sus pacientes, te facilita el entendimiento de tu tratamiento y da mucha confianza. Trato digno y eficaz"</p>
 										<span class="star"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
                     <h3>José Martínez</h3>
@@ -280,7 +282,7 @@
               <div class="carousel-item active">
                 <div class="d-block w-100">
                   <div class="item-opinion-des">
-                    <img src="img/recursos/paciente-1.png" alt="">
+                    <img src="img/recursos/paciente-1.png" alt="Foto de perfil del paciente">
                     <p>"Excelente doctor con un buen acompañamiento durante la enfermedad. Con muy buenas propuestas de tratamiento y sobre todo muy eficaces. Altamente capacitado!"</p>
                     <span class="star"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
                     <h3>Rita Ramírez</h3>
@@ -290,7 +292,7 @@
               <div class="carousel-item">
                 <div class="d-block w-100">
                   <div class="item-opinion-des">
-                    <img src="img/recursos/paciente-5.png" alt="">
+                    <img src="img/recursos/paciente-5.png" alt="Foto de perfil del paciente">
                     <p>"Excelente explicación
                       Muy buena atención
                       Me da seguridad
@@ -303,7 +305,7 @@
               <div class="carousel-item">
                 <div class="d-block w-100">
                   <div class="item-opinion-des">
-                    <img src="img/recursos/paciente-3.png" alt="">
+                    <img src="img/recursos/paciente-3.png" alt="Foto de perfil del paciente">
                     <p>"Muy profesional y con experiencia. Trato excelente muy recomendable. Dr. Carlos Enrique López Betancourt."</p>
                     <span class="star"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
                     <h3>Jenny Salas</h3>
@@ -313,7 +315,7 @@
               <div class="carousel-item">
                 <div class="d-block w-100">
                   <div class="item-opinion-des">
-                    <img src="img/recursos/paciente-2.png" alt="">
+                    <img src="img/recursos/paciente-2.png" alt="Foto de perfil del paciente">
                     <p>"Excelente cirujano oncólogo! Comprometido con la atención de sus pacientes. Se toma su tiempo en explicar las cosas y es muy meticuloso en su trabajo. Desde el primer contacto se nota la calidez con la que hace las cosas. 100 % recomendable."</p>
                     <span class="star"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
                     <h3>Adriana</h3>
@@ -323,7 +325,7 @@
               <div class="carousel-item">
                 <div class="d-block w-100">
                   <div class="item-opinion-des">
-                    <img src="img/recursos/opinion-2.png" alt="">
+                    <img src="img/recursos/opinion-2.png" alt="Foto de perfil del paciente">
                     <p>"Excelente atención por parte del doctor, explicación detallada, muy paciente a la hora de aclarar dudas, trato inmejorable."</p>
                     <span class="star"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
                     <h3>R.A.M</h3>
@@ -333,7 +335,7 @@
               <div class="carousel-item">
                 <div class="d-block w-100">
                   <div class="item-opinion-des">
-                    <img src="img/recursos/paciente-4.png" alt="">
+                    <img src="img/recursos/paciente-4.png" alt="Foto de perfil del paciente">
                     <p>"Explica a detalle lo que se hará y tiene empatía hacia sus pacientes, te facilita el entendimiento de tu tratamiento y da mucha confianza. Trato digno y eficaz"</p>
                     <span class="star"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></span>
                     <h3>José Martínez</h3>
@@ -349,14 +351,14 @@
     <section class="container-promociones">
       <!--Start item single promotion-->
       <div class="item-promocion">
-        <img src="img/promociones/PromosBENTARCURT.jpg" alt="promoción 1">
-        <a href="https://wa.me/525532321256?text=Buenas tardes, solicito información sobre " target="_blank">Contáctanos</a>
+        <img src="img/promociones/PromosBENTARCURT.webp" alt="Banner promocional">
+        <a href="https://api.whatsapp.com/send?phone=525532321256" target="_blank">Contáctanos</a>
       </div>
       <!--End item single promotion
       <!--Start item single promotion
       <div class="item-promocion">
         <img src="img/promociones/2da-promo-oncologo.jpg" alt="promoción 2">
-        <a href="https://wa.me/525532321256?text=Buenas tardes, solicito información sobre " target="_blank">Contáctanos</a>
+        <a href="https://api.whatsapp.com/send?phone=525532321256" target="_blank">Contáctanos</a>
       </div>
       <!--End item single promotion-->
     </section>
@@ -368,13 +370,13 @@
       <p>Acércate con nosotros y obtén la asesoría adecuada para comenzar tu tratamiento.</p>
       <p>La prevención es la mejor forma de combatir el Cáncer. No lo pienses más y acude a una cita de valoración inicial.</p>
       <p>Atención únicamente a través de cita.</p>
-      <h4>Horario de Atención Telefónica</h4>
+      <h3>Horario de Atención Telefónica</h3>
       <ul>
         <li>Lunes a Viernes de 10:00 a 22:00</li>
         <li>Sábado y Domingo de 10:00 a 18:00</li>
       </ul>
 			<div class="btn-contacto">
-				<a href="https://wa.me/525532321256?text=Buenas tardes, solicito información sobre " target="_blank">
+				<a href="https://api.whatsapp.com/send?phone=525532321256" target="_blank">
 					<button><i class="bi bi-whatsapp"></i> WhatsApp</button>
 				</a>
 				<a href="tel:5532321256" target="_blank">
@@ -387,11 +389,11 @@
 		<h2 class="ubi-title" id="ubicacion">UBICACIONES</h2>
     <section class="ubicaciones ubicaciones-mov">
       <div class="ubicacion-item">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15056.414688598377!2d-99.1681855!3d19.3646632!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff0a271f3adb%3A0x4f7b6ed1a5c6dac!2sHospital%20Angeles%20Universidad!5e0!3m2!1ses-419!2smx!4v1690320783343!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe title="Mapa del consultorio en Av. Universidad del Dr. Betancourt" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15056.414688598377!2d-99.1681855!3d19.3646632!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff0a271f3adb%3A0x4f7b6ed1a5c6dac!2sHospital%20Angeles%20Universidad!5e0!3m2!1ses-419!2smx!4v1690320783343!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <p class="cita">Atención únicamente a través de cita.</p>
         <div class="acordeon">
           <div class="acordeon-item">
-            <button type="button" onclick="openMenu()">
+            <button type="button">
               <div class="dir">
                 Dirección y horarios 
                 <div id="arrow">
@@ -413,14 +415,14 @@
         </div>
       </div>
       <div class="ubicacion-item">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15042.132627006717!2d-99.2425818!3d19.518711!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2040c15cfc5b3%3A0x1fe70b38d4342846!2sHospital%20San%20Jos%C3%A9%20Sat%C3%A9lite%20S.A.%20de%20C.V!5e0!3m2!1ses-419!2smx!4v1690321942620!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe title="Mapa del consultorio en Satélite del Dr. Betancourt" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15042.132627006717!2d-99.2425818!3d19.518711!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2040c15cfc5b3%3A0x1fe70b38d4342846!2sHospital%20San%20Jos%C3%A9%20Sat%C3%A9lite%20S.A.%20de%20C.V!5e0!3m2!1ses-419!2smx!4v1690321942620!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <p class="cita">Atención únicamente a través de cita.</p>
         <div class="acordeon">
           <div class="acordeon-item">
-            <button type="button" onclick="openMenu2()">
+            <button type="button"">
               <div class="dir">
                 Dirección y horarios 
-                <div id="arrow-2">
+                <div id="arrow">
                   <i class="bi bi-chevron-down"></i>
                 </div>
               </div>
@@ -439,14 +441,14 @@
         </div>
       </div>
       <div class="ubicacion-item">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.5960870364643!2d-99.13777319038333!3d19.299923544831625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce01af74a4cc7b%3A0x1e00d087af935a9b!2sHospital%20Angeles%20Acoxpa!5e0!3m2!1ses-419!2smx!4v1691001037005!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe title="Mapa del consultorio en Acoxpa del Dr. Betancourt" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.5960870364643!2d-99.13777319038333!3d19.299923544831625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce01af74a4cc7b%3A0x1e00d087af935a9b!2sHospital%20Angeles%20Acoxpa!5e0!3m2!1ses-419!2smx!4v1691001037005!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <p class="cita">Atención únicamente a través de cita.</p>
         <div class="acordeon">
           <div class="acordeon-item">
-            <button type="button" onclick="openMenu3()">
+            <button type="button"">
               <div class="dir">
                 Dirección y horarios 
-                <div id="arrow-3">
+                <div id="arrow">
                   <i class="bi bi-chevron-down"></i>
                 </div>
               </div>
@@ -465,14 +467,14 @@
         </div>
       </div>
       <div class="ubicacion-item">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15094.967003351527!2d-99.2100824!3d18.9428217!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cddfe9bb2b1969%3A0xd1ee2c97e61dedbf!2sHospital%20San%20Diego!5e0!3m2!1ses-419!2smx!4v1690322016413!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe title="Mapa del consultorio en San Diego del Dr. Betancourt" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15094.967003351527!2d-99.2100824!3d18.9428217!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cddfe9bb2b1969%3A0xd1ee2c97e61dedbf!2sHospital%20San%20Diego!5e0!3m2!1ses-419!2smx!4v1690322016413!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <p class="cita">Atención únicamente a través de cita.</p>
         <div class="acordeon">
           <div class="acordeon-item">
-            <button type="button" onclick="openMenu4()">
+            <button type="button"">
               <div class="dir">
                 Dirección y horarios 
-                <div id="arrow-4">
+                <div id="arrow">
                   <i class="bi bi-chevron-down"></i>
                 </div>
               </div>
@@ -494,7 +496,7 @@
     </section>
     <section class="ubicaciones ubicaciones-des">
       <div class="ubicacion-item">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15056.414688598377!2d-99.1681855!3d19.3646632!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff0a271f3adb%3A0x4f7b6ed1a5c6dac!2sHospital%20Angeles%20Universidad!5e0!3m2!1ses-419!2smx!4v1690320783343!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe title="Mapa del consultorio en Av. Universidad del Dr. Betancourt" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15056.414688598377!2d-99.1681855!3d19.3646632!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff0a271f3adb%3A0x4f7b6ed1a5c6dac!2sHospital%20Angeles%20Universidad!5e0!3m2!1ses-419!2smx!4v1690320783343!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="ubicacion-txt">
 					<p>Atención únicamente a través de cita.</p>
 					<h3>Hospital Ángeles Universidad</h3>
@@ -504,7 +506,7 @@
 				</div>
       </div>
       <div class="ubicacion-item">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15042.132627006717!2d-99.2425818!3d19.518711!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2040c15cfc5b3%3A0x1fe70b38d4342846!2sHospital%20San%20Jos%C3%A9%20Sat%C3%A9lite%20S.A.%20de%20C.V!5e0!3m2!1ses-419!2smx!4v1690321942620!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe title="Mapa del consultorio en Satélite del Dr. Betancourt" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15042.132627006717!2d-99.2425818!3d19.518711!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2040c15cfc5b3%3A0x1fe70b38d4342846!2sHospital%20San%20Jos%C3%A9%20Sat%C3%A9lite%20S.A.%20de%20C.V!5e0!3m2!1ses-419!2smx!4v1690321942620!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="ubicacion-txt">
 					<p>Atención únicamente a través de cita.</p>
 					<h3>Hospital San José Satélite S.A. de C.V</h3>
@@ -514,7 +516,7 @@
 				</div>
       </div>
       <div class="ubicacion-item">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.5960870364643!2d-99.13777319038333!3d19.299923544831625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce01af74a4cc7b%3A0x1e00d087af935a9b!2sHospital%20Angeles%20Acoxpa!5e0!3m2!1ses-419!2smx!4v1691001037005!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe title="Mapa del consultorio en Acoxpa del Dr. Betancourt" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.5960870364643!2d-99.13777319038333!3d19.299923544831625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85ce01af74a4cc7b%3A0x1e00d087af935a9b!2sHospital%20Angeles%20Acoxpa!5e0!3m2!1ses-419!2smx!4v1691001037005!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="ubicacion-txt">
           <p>Atención únicamente a través de cita.</p>
 					<h3>Hospital Angeles Acoxpa</h3>
@@ -524,7 +526,7 @@
 				</div>
       </div>
       <div class="ubicacion-item">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15094.967003351527!2d-99.2100824!3d18.9428217!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cddfe9bb2b1969%3A0xd1ee2c97e61dedbf!2sHospital%20San%20Diego!5e0!3m2!1ses-419!2smx!4v1690322016413!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe title="Mapa del consultorio en San Diego del Dr. Betancourt" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15094.967003351527!2d-99.2100824!3d18.9428217!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cddfe9bb2b1969%3A0xd1ee2c97e61dedbf!2sHospital%20San%20Diego!5e0!3m2!1ses-419!2smx!4v1690322016413!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         <div class="ubicacion-txt">
           <p>Atención únicamente a través de cita.</p>
           <h3>Hospital San Diego</h3>
@@ -536,19 +538,19 @@
       </div>
     </section>
 		<div class="WA-flotante">
-			<a href="https://wa.me/525532321256?text=Buenas tardes, solicito información sobre " target="_blank"><i class="bi bi-whatsapp"></i></a>
+			<a href="https://api.whatsapp.com/send?phone=525532321256" target="_blank" aria-label="Mandar mensaje al WhatsApp del Dr. Betancourt"><i class="bi bi-whatsapp"></i></a>
 		</div>
     <footer class="footer">
       <h4>Síguenos en todas nuestras redes sociales</h4>
       <div class="icons-rs">
-          <a href="https://www.facebook.com/people/Dr-Carlos-Enrique-López-Betancourt/100065396683357/?sk=photos" target="_blank"><i class="bi bi-facebook"></i></a>
-          <a href="https://www.instagram.com/onco_carlos_beta/" target="_blank"><i class="bi bi-instagram"></i></a>
-          <a href="https://www.doctoralia.com.mx/carlos-enrique-lopez-betancourt-2/cirujano-oncologo-cirujano-general/naucalpan?utm_campaign=305525&utm_medium=link&utm_source=widget&utm_term=instagram-profile-link" target="_blank"><img src="img/logos/doctoralia.png" alt=""></a>
-          <a href="https://wa.me/525532321256?text=Buenas tardes, solicito información sobre " target="_blank"><i class="bi bi-whatsapp"></i></a>
-          <a href="tel:5532321256" target="_blank"><i class="bi bi-telephone"></i></a>
+          <a href="https://www.facebook.com/people/Dr-Carlos-Enrique-López-Betancourt/100065396683357/?sk=photos" target="_blank" aria-label="Ir a la página de Facebook del Dr. Betancourt"><i class="bi bi-facebook"></i></a>
+          <a href="https://www.instagram.com/onco_carlos_beta/" target="_blank" aria-label="Ir a la página de Instagram del Dr. Betancourt"><i class="bi bi-instagram"></i></a>
+          <a href="https://www.doctoralia.com.mx/carlos-enrique-lopez-betancourt-2/cirujano-oncologo-cirujano-general/naucalpan?utm_campaign=305525&utm_medium=link&utm_source=widget&utm_term=instagram-profile-link" target="_blank" aria-label="Ir a la página de Doctoralia del Dr. Betancourt"><img src="img/logos/doctoralia.png" alt=""></a>
+          <a href="https://api.whatsapp.com/send?phone=525532321256" target="_blank" aria-label="Mandar mensaje al WhatsApp del Dr. Betancourt"><i class="bi bi-whatsapp"></i></a>
+          <a href="tel:5532321256" target="_blank" aria-label="Llamar al número del Dr. Betancourt"><i class="bi bi-telephone"></i></a>
       </div>
       <p>© Dr. Carlos López Betancourt. Todos los derechos reservados <br> Design by
-          <a href="https://dentarios.com.mx/programacion.php" target="_blank">Agencia Dentarios</a> </p>
+          <a href="https://dentarios.com.mx" target="_blank">Agencia Dentarios</a> </p>
     </footer>
 		<script src="js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
