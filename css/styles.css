@@ -567,7 +567,7 @@
   display: none;
 }
 .bi-star-fill {
-  color: gold;
+  color: rgb(229, 198, 26);
 }
 /*Estilos promociones*/
 .container-promociones {
@@ -959,8 +959,11 @@
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-gap: 20px;
+  place-content: center;
+  place-items: center;
   margin: 30px 10px 30px 10px;
   width: -webkit-fill-available;
+  max-width: 1100px;
 }
 .acordeon-tratamientos .acordeon-item-tratamientos button {
   padding: 15px;
@@ -1098,12 +1101,92 @@
   justify-content: center;
   align-items: flex-start;
 }
+.card-treatment {
+  max-width: 300px;
+  border-radius: 0.5rem;
+  background-color: #fff;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  border: 1px solid rgb(187, 187, 187);
+}
+
+.card-treatment a {
+  text-decoration: none
+}
+
+.content {
+  padding: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-direction: column;
+  height: calc(100% - 150px);
+}
+  
+.image {
+  object-fit: cover;
+  width: 100%;
+  height: 150px;
+  background-color: rgb(239, 205, 255);
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.image img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+.title {
+  color: #111827;
+  font-size: 1.2rem;
+  line-height: 1.75rem;
+  font-weight: 600;
+}
+
+.desc {
+  margin-top: 0.5rem;
+  color: #5e6063;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.action {
+  display: inline-flex;
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  align-items: center;
+  gap: 0.25rem;
+  background-color: #0b3ca4;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+.action-two {
+  background-color: #7d64a3;
+}
+.action span {
+  transition: .3s ease;
+}
+
+.action:hover span {
+  transform: translateX(4px);
+}
+
 @media (min-width: 425px) {
   .item-tratamientos img, .item-cirugia img, .item-otros img {
     width: 250px;
   }
 }
 @media (min-width: 768px) {
+  .card-treatment {
+    height: 100%;
+  }
+  .desc {
+    font-size: 0.9rem;
+    line-height: 1.25rem;
+  }
   .hero .img-hero-mov {
     display: none;
   }
